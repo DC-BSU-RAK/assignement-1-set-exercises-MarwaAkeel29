@@ -1,0 +1,26 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:  #f7f3e9;
+    margin: 0%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5rem;
+    color: #9C6644;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header img {
+    margin: 0%;
+    width: 500px;
+    height: 700px;
+    margin-bottom: 20px;
+}
+
