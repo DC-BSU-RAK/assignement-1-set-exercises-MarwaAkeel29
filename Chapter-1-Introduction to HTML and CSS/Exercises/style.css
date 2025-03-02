@@ -24,3 +24,10 @@ header img {
     margin-bottom: 20px;
 }
 
+.description, .ingredients {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.7rem;
+    background-color:  #f7e6d4;
+    margin-bottom: 30px;
+    padding: 40px;
+}
