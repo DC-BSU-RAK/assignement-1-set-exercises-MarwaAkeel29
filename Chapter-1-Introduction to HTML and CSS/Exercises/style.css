@@ -116,3 +116,14 @@ ol li p {
     text-align: center;
     margin: 8px;
 }
+
+.tips ul {
+    list-style-type: square;
+    padding-left: 70px;
+}
+
+.tips li {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+    padding: 10px;
+}
