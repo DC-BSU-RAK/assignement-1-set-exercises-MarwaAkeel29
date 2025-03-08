@@ -1,6 +1,6 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0%;
+    margin: 0;
     padding: 20px;
     line-height: 1.7;
     background-image: url("https://i.pinimg.com/236x/51/ff/82/51ff8270b6412e693391a66dd1ac97fe.jpg");
@@ -23,10 +23,10 @@ h1 {
 }
 
 header img {
-    margin: 0%;
     border: 15px solid #9C6644;
-    width: 500px;
-    height: 700px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     margin-bottom: 20px;
 }
 
@@ -40,7 +40,7 @@ h2 {
 .description, .ingredients, .method, .tips {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.7rem;
-    background-color:  #f7e6d4;
+    background-color: rgba(247, 230, 212, 0.9);
     border: 5px solid #9C6644;
     border-radius: 70px;
     margin-bottom: 60px;
@@ -112,7 +112,7 @@ ol li img {
 }
 
 ol li p {
-    font-size: 1.4 rem;
+    font-size: 1.4rem;
     text-align: center;
     margin: 8px;
 }
