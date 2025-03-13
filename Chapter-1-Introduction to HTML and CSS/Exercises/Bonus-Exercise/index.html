@@ -14,15 +14,49 @@
         </p>
     </header>
 
-    <section class="html_tags">
         <h2><strong> What is HTML? </strong></h2>
         <p>HTML tags are the building blocks of every webpage! They define content, structure, and functionality—whether it’s text, links, images, or lists. Mastering these essential tags is the first step to creating stunning and interactive web pages!</p>
 
-        <h3> Basic HTML Tags </h3>
+        <h2>HTML Tags</h3>
         <p>Lets dive into some essential HTML tags and how they can be used</p>
 
+    <section class="html_tags"></section>
+        <h3>1. Basic Structure of an HTML Page</h3>
+
         <article>
-            <h4>Heading Tag (&lt;h1&gt; - &lt;h6&gt;)</h4>
+            <h4>a) HTML Document Structure</h4>
+            <p>The backbone of every webpage! These essential tags lay the groundwork, organizing content and ensuring everything runs smoothly behind the scenes.</p>
+            <p>
+                <ul>
+                    <li>&lt;!DOCTYPE html&gt; - The living space, where all the visible content like text, images, and buttons exist. </li>
+                    <li>&lt;html&gt; - The root of the document, wrapping everything inside. It's like the outer shell of a house. </li>
+                    <li>&lt;head&gt; - Contains meta-information, styles, and scripts. Think of it as the control center. </li>
+                    <li>&lt;title&gt; -  Defines the title of the page (shown on the browser tab). Like a book title, it gives your page identity. </li>
+                    <li> &lt;body&gt; - The living space, where all the visible content like text, images, and buttons exist. </li>
+                </ul>
+            </p>
+            <pre> 
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Page Title&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        Content goes here!
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </code>
+            </pre>
+        </aticle>
+    </section>
+
+    <section class="text_formatting">
+        <h3>2. Text Formatting Tags</h3>
+        <p>Give your content some style and structure using these essential text formatting tags!</p>
+
+        <article>
+            <h4>a) Heading Tag (&lt;h1&gt; - &lt;h6&gt;)</h4>
             <p>The heading tags define headings on a webpage with &lt;h1&gt; being the most important and &lt;h6&gt; the least. They help structure content, improve readability.</p>
             <pre>
                 <code>
@@ -37,26 +71,62 @@
         </article>
 
         <article>
-            <h4>Paragraph Tag &lt;p&gt;</h4>
+            <h4>b) Paragraph Tag &lt;p&gt;</h4>
             <p>The &lt;p&gt; tag defines a block of text as a paragraph in an HTML document. It helps organize content, making it easier to read and understand by adding spacing between text sections.</p>
-            <pre><code>&lt;p&gt;This is an example of a paragraph.&lt;/p&gt;</code></pre>
+            <pre>
+                <code>
+                    &lt;p&gt;This is an example of a paragraph.&lt;/p&gt;
+                </code>
+            </pre>
         </article>
 
         <article>
-            <h4> Link Tag </h4>
-            <p>The &lt;a&gt; tag is your gateway to seamless navigation! It creates clickable links that connect webpages, jump to sections, or direct users to external resources. Just add the <code>href</code> attribute to define the destination!</p>
-            <pre><code>&lt;a href="https://www.pizzaworld.com"&gt;Grab a virtual slice of pizza! 🍕&lt;/a&gt;</code></pre>
+            <h4>c) Text Styling Tags</h4>
+            <p>These tags help to emphasize or modify text appearance.</p>
+            <P>
+                <ul>
+                    <li>&lt;b&gt; -  It makes text bold for emphasis but doesn't add importance.</li>
+                    <li>&lt;strong&gt; - Highlights important text with extra meaning (used by screen readers). </li>
+                    <li>&lt;i&gt; - Italicizes text for emphasis, thoughts, or foreign words.</li>
+                    <li>&lt;u&gt; - Draws attention to text, often used for misspellings or special emphasis.</li>
+                    <li> &lt;mark&gt; - Highlights text in bright yellow (by default) to make it stand out.</li>
+                </ul>
+            </P>
+            <pre>
+                <code>
+                    &lt;b&gt; <b>This is a bold Text</b> &lt;/b&gt;  
+                    &lt;strong&gt; <strong> This is an Important Text </strong> &lt;/strong&gt; 
+                    &lt;i&gt; <i>This Text is in Italics </i> &lt;/i&gt;   
+                    &lt;u&gt; <u>This Text is Underlined </u> &lt;/u&gt; 
+                    &lt;mark&gt; <mark>This Text is Highlighted </mark> &lt;/mark&gt;
+                </code>
+            </pre>
+        </article>
+
+    <section class="links_media">   
+        <h3>3. Links & Media</h3> 
+        <p>Bridge the gap between your webpage and the world! These tags turn plain text into interactive journeys and vibrant visuals, making your content come alive.</p>
+
+        <article>
+            <h4> a) Hyperlink Tag </h4>
+            <p>The &lt;a&gt; tag is your gateway to seamless navigation! It creates clickable links that connect webpages, jump to sections, or direct users to external resources. Just add the <code>href</code> attribute to define the destination.
+            <a href= "https://i.pinimg.com/736x/8f/a0/73/8fa0732d135add9371a718f1d246b628.jpg" target="_blank">Need a moment of peace? Click here✨</a>. This is how you can create Hyperlinks. Below is an example of a Hyperlink</p>
+            <pre>
+                <code>
+                    &lt;a href="https://www.nuture.com"&gt;Take a walk through nature! 🌿&lt;/a&gt;
+                </code>
+            </pre>
         </article>
 
         <article>
-            <h4>Image Tag &lt;img&gt;</h4>
-            <p>They say a picture is worth a thousand words—well, the &lt;img&gt; tag brings those pictures to life on your webpage! Just set the <code>src</code> attribute to point to an image file.</p>
-            <pre><code>&lt;img src="https://www.example.com/cat.jpg" alt="A cute cat"&gt;</code></pre>
-            <a href= "https://i.pinimg.com/736x/8f/a0/73/8fa0732d135add9371a718f1d246b628.jpg" target="_blank">
-            Need a moment of peace? Click here to immerse yourself in nature! 🌿✨
-            </a>
-        </article>
-    </section>
+            <h4>b) Image Tag &lt;img&gt;</h4>
+            <p>They say a picture is worth a thousand words—well, the &lt;img&gt; tag brings those pictures to life on your webpage! Just set the <code>src</code> attribute to point to an image file. You can use the &lt;img&gt; tag inside an &lt;a&gt; tag to make the image clickable. Check out the &lt;img&gt; tag example given below, </p>
+            <pre>
+                <code>
+                    &lt;img src="https://www.example.com/image.jpg" alt="Image Description"&gt;
+                </code>
+            </pre>
+        </article>  
        
 </body>
 </html>
