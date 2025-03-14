@@ -24,7 +24,7 @@
         <h3>1. Basic Structure of an HTML Page</h3>
 
         <article>
-            <h4>a) HTML Document Structure</h4>
+            <h4>(a) HTML Document Structure</h4>
             <p>The backbone of every webpage! These essential tags lay the groundwork, organizing content and ensuring everything runs smoothly behind the scenes.</p>
             <p>
                 <ul>
@@ -56,7 +56,7 @@
         <p>Give your content some style and structure using these essential text formatting tags!</p>
 
         <article>
-            <h4>a) Heading Tag (&lt;h1&gt; - &lt;h6&gt;)</h4>
+            <h4>(a) Heading Tag (&lt;h1&gt; - &lt;h6&gt;)</h4>
             <p>The heading tags define headings on a webpage with &lt;h1&gt; being the most important and &lt;h6&gt; the least. They help structure content, improve readability.</p>
             <pre>
                 <code>
@@ -71,7 +71,7 @@
         </article>
 
         <article>
-            <h4>b) Paragraph Tag &lt;p&gt;</h4>
+            <h4>(b) Paragraph Tag &lt;p&gt;</h4>
             <p>The &lt;p&gt; tag defines a block of text as a paragraph in an HTML document. It helps organize content, making it easier to read and understand by adding spacing between text sections.</p>
             <pre>
                 <code>
@@ -81,7 +81,7 @@
         </article>
 
         <article>
-            <h4>c) Text Styling Tags</h4>
+            <h4>(c) Text Styling Tags</h4>
             <p>These tags help to emphasize or modify text appearance.</p>
             <P>
                 <ul>
@@ -108,7 +108,7 @@
         <p>Bridge the gap between your webpage and the world! These tags turn plain text into interactive journeys and vibrant visuals, making your content come alive.</p>
 
         <article>
-            <h4> a) Hyperlink Tag </h4>
+            <h4> (a) Hyperlink Tag </h4>
             <p>The &lt;a&gt; tag is your gateway to seamless navigation! It creates clickable links that connect webpages, jump to sections, or direct users to external resources. Just add the <code>href</code> attribute to define the destination.
             <a href= "https://i.pinimg.com/736x/8f/a0/73/8fa0732d135add9371a718f1d246b628.jpg" target="_blank">Need a moment of peace? Click here✨</a>. This is how you can create Hyperlinks. Below is an example of a Hyperlink</p>
             <pre>
@@ -119,7 +119,7 @@
         </article>
 
         <article>
-            <h4>b) Image Tag &lt;img&gt;</h4>
+            <h4> (b) Image Tag &lt;img&gt;</h4>
             <p>They say a picture is worth a thousand words—well, the &lt;img&gt; tag brings those pictures to life on your webpage! Just set the <code>src</code> attribute to point to an image file. You can use the &lt;img&gt; tag inside an &lt;a&gt; tag to make the image clickable. Check out the &lt;img&gt; tag example given below, </p>
             <pre>
                 <code>
@@ -127,6 +127,79 @@
                 </code>
             </pre>
         </article>  
-       
+
+        <article>
+            <h4> (c) Iframe &lt;iframe&gt;</h4>
+            <p> 
+                The &lt;iframe&gt; tag is like a digital window that lets you embed external content directly onto your webpage. 
+                Whether it's a YouTube video, an interactive map, or another webpage, this tag seamlessly integrates media and 
+                resources from other sites. Check out the &lt;iframe&gt; tag example given below:
+            </p>
+            <pre>
+                <code>
+                    &lt;iframe width="560" height="315" 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            allowfullscreen&gt;
+                    &lt;/iframe&gt;
+                </code>
+            </pre>
+            <p> 
+                And guess what? The magic of iframe is right in front of you! The interactive code editor below is embedded using an iframe, allowing you to experiment with HTML, CSS, and JavaScript without leaving the page.
+                So why not give it a shot? Try out the tags we've explored so far and bring your creativity to life—right here, right now!
+            </p>
+            <iframe width="800" height="300" 
+            src="https://onecompiler.com/html"
+            title="Code compiler"
+            allowfullscreen>
+            </iframe>
+        </article>
+
+    <section class="links_media">   
+        <h3>4. Lists and Form tags</h3>
+        <p>Lists and forms bring structure to your webpage—lists organize content, while forms collect user input. Together, they make navigation and interaction seamless!</p>
+
+        <article>
+            <h4>(a)  List Tags: Ordered & Unordered Lists</h4>
+            <p>Lists bring order to chaos, turning scattered thoughts into neatly arranged points. Whether you're counting down a top 10, outlining steps in a process, or simply grouping related items, list tags have your back! Ordered lists (&lt;ol&gt;) keep things sequential, while unordered lists (&lt;ul&gt;) let you present items without a strict order. Perfect for recipes, to-do lists, or even treasure maps</p>
+            <pre>
+                <code>
+                    &lt;ul&gt;  &lt;!-- Unordered List --&gt;
+                        &lt;li&gt;Bali - Tropical beaches and stunning sunsets&lt;/li&gt;
+                        &lt;li&gt;Swiss Alps&lt;/li&gt;
+                        &lt;li&gt;New York City&lt;/li&gt;
+                    &lt;/ul&gt;
+
+                    &lt;ol&gt;  &lt;!-- Ordered List --&gt;
+                        &lt;li&gt;Wake up & stretch&lt;/li&gt;
+                        &lt;li&gt;Drink a glass of water&lt;/li&gt;
+                        &lt;li&gt;Eat a healthy breakfast&lt;/li&gt;
+                        &lt;li&gt;Plan the day ahead&lt;/li&gt;
+                    &lt;/ol&gt;    
+                </code>
+            </pre>
+        </article>
+
+        <article>
+            <h4>(b) Forms and Input: The Digital Conversation Starters</h4>
+            <p>Forms and input fields are like digital doorways, inviting users to interact, share, and engage. Whether it's signing up for a newsletter, searching for a hidden treasure, or submitting a top-secret message, these tags turn passive browsing into an interactive experience. With text boxes, buttons, checkboxes, and dropdowns, forms give users the power to communicate with your site</p>
+            <pre>
+                <code>
+                    &lt;form&gt;
+                        &lt;label for="name"&gt;Name:&lt;/label&gt;
+                        &lt;input type="text" id="name" name="name"&gt;
+                        &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                    &lt;/form&gt;
+                </code>
+            </pre>
+            <p>See those Name and Email fields? They're more than just empty boxes—they're your digital handshake! Give it a try and enter your details. Whether it's a friendly hello or a secret mission sign-up, forms turn clicks into connections</p>
+            <form>
+                <lable for="name"> Name:</lable> 
+                <input type="text" id="name" name="name"><br>
+                <lable for="email"> Email:</lable> 
+                <input type="email" id="name" name="name"><br>
+                <button type="submit">submit</button>
+            </form>
+        </article>
+      
 </body>
 </html>
