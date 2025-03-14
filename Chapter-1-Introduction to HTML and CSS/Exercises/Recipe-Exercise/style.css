@@ -17,13 +17,14 @@ body {
 h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 5rem;
-    color: #9C6644;
+    color: #d9cdc0;
     margin-bottom: 20px;
     text-align: center;
 }
 
 header img {
-    border: 15px solid #9C6644;
+    border-radius: 50px;
+    border: 15px solid #c7b7ad;
     width: 100%;
     max-width: 500px;
     height: auto;
@@ -40,18 +41,19 @@ h2 {
 .description, .ingredients, .method, .tips, .video-container{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.7rem;
-    background-color: rgba(247, 230, 212, 0.9);
+    background-color: #f8e8d7;
     border: 5px solid #9C6644;
     border-radius: 70px;
     margin-bottom: 60px;
-    margin: 40px;
+    margin: 40px auto;
     box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1);
     padding: 40px;
+    max-width: 90%;
 }
 
 .ingredients img{ 
     width: 100%;
-    height: 700px;
+    height: auto;
     margin: 5px;
     border-radius: 50px;
     box-shadow: 20px 15px 5px  rgba(0, 0, 0, 0.1);
@@ -130,6 +132,7 @@ ol li p {
     height: 450px;
     border-radius: 10px;
     border: none;
+    box-shadow: 20px 15px 5px rgba(0, 0, 0, 0.1);
 }
 
 .tips ul {
@@ -141,4 +144,32 @@ ol li p {
     font-size: 1.4rem;
     margin-bottom: 8px;
     padding: 10px;
+}
+
+.recipe-details {
+    background-image: url("https://i.pinimg.com/736x/22/4d/4b/224d4b398888ae6b9457b48201b58853.jpg");
+    background-size: cover;
+    background-color: #f4dfda;
+    padding: 20px;
+    margin: 70px ;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.recipe-image {
+    width: 100%; /* Adjust as needed */
+    max-width: 300px;
+    height: auto;
+    border: 3px solid rgb(190, 159, 146);
+}
+
+.recipe-text { 
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.time-info p {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    font-weight: bold;
 }
