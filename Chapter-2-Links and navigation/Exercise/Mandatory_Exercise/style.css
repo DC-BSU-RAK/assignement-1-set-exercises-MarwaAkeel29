@@ -23,3 +23,35 @@
     background-color: #db8b13f9; /* Dragon-like fiery color */
     color: white;
 }
+
+.main-content {
+    margin-left: 210px; /* Adjust to match sidebar width */
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: #db8b13f9;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #db8b13f9;
+}
+
+.overview-flex, .key-flex, .characters{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.overview-text, .additional-info {
+    color: black;
+    max-width: 600px;
+}
