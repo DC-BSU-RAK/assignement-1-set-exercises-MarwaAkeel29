@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML & CSS Quick-Reference Guide</title>
+    <link rel="stylesheet" href="style.css"> <!-- Linking external stylesheet -->
 </head>
 <body>
     <header>
         <h1>Essential HTML & CSS: Your Ultimate Cheat Sheet</h1>
-        <p>
+        <p class="Description">
             Explore this user-friendly guide covering essential HTML tags and CSS properties, designed to help beginners and experienced developers alike with concise explanations and practical demonstrations. 
             HTML and CSS are the dynamic duo behind every website you see online. HTML lays the foundation, structuring text, links, lists, and buttons, while CSS steps in to style it all—adding colors, fonts, layouts, and visual appeal. HTML builds the content, and CSS makes it shine!
         </p>
     </header>
 
-<section>
+<section class="html">
     <h2><strong> What is HTML? </strong></h2>
     <p>HTML tags are the building blocks of every webpage! They define content, structure, and functionality—whether it’s text, links, images, or lists. Mastering these essential tags is the first step to creating stunning and interactive web pages. Lets dive into some essential HTML tags and how they can be used</p>
 
-<section class="html_tags"></section>
+<section class="html_tags">
     <h3>1. Basic Structure of an HTML Page</h3>
 
     <article>
@@ -51,19 +52,18 @@
 
 <section class="text_formatting">
     <h3>2. Text Formatting Tags</h3>
-    <p>Give your content some style and structure using these essential text formatting tags!</p>
 
     <article>
         <h4>(a) Heading Tag (&lt;h1&gt; - &lt;h6&gt;)</h4>
-        <p>The heading tags define headings on a webpage with &lt;h1&gt; being the most important and &lt;h6&gt; the least. They help structure content, improve readability.</p>
+        <p>The heading tags define headings on a webpage with &lt;h1&gt; being the most important and &lt;h6&gt; the least. They help structure content, improve readability. As you can see below, the size will reduce accordingly</p>
         <pre>
-            <code>
-                &lt;h1&gt;Main Heading&lt;/h1&gt;
-                &lt;h2&gt;Subheading&lt;/h2&gt;
-                &lt;h3&gt;Section Title&lt;/h3&gt;
-                &lt;h4&gt;Subsection Title&lt;/h4&gt;
-                &lt;h5&gt;Smaller Heading&lt;/h5&gt;
-                &lt;h6&gt;Least Important Heading&lt;/h6&gt;
+            <code class="code-headings">
+                <span>&lt;h1&gt;Main Heading&lt;/h1&gt;</span>
+                <span>&lt;h2&gt;Subheading&lt;/h2&gt;</span>
+                <span>&lt;h3&gt;Section Title&lt;/h3&gt;</span>
+                <span>&lt;h4&gt;Subsection Title&lt;/h4&gt;</span>
+                <span>&lt;h5&gt;Smaller Heading&lt;/h5&gt;</span>
+                <span>&lt;h6&gt;Least Important Heading&lt;/h6&gt;</span>    
             </code>
         </pre>           
     </article>
@@ -104,7 +104,6 @@
 
 <section class="links_media">   
     <h3>3. Links & Media</h3> 
-    <p>Bridge the gap between your webpage and the world! These tags turn plain text into interactive journeys and vibrant visuals, making your content come alive.</p>
 
     <article>
         <h4> (a) Hyperlink Tag </h4>
@@ -146,7 +145,7 @@
             And guess what? The magic of iframe is right in front of you! The interactive code editor below is embedded using an iframe, allowing you to experiment with HTML, CSS, and JavaScript without leaving the page.
             So why not give it a shot? Try out the tags we've explored so far and bring your creativity to life—right here, right now!
         </p>
-        <iframe class="iframe" width="800" height="300" 
+        <iframe class="iframe" 
         src="https://onecompiler.com/html"
         title="Code compiler"
         allowfullscreen>
@@ -154,9 +153,8 @@
     </article>
 </section>
 
-<section class="links_media">   
+<section class="lists_forms">   
     <h3>4. Lists and Form tags</h3>
-    <p>Lists and forms bring structure to your webpage—lists organize content, while forms collect user input. Together, they make navigation and interaction seamless!</p>
 
     <article>
         <h4>(a)  List Tags: Ordered & Unordered Lists</h4>
@@ -204,16 +202,17 @@
 </section>
 
 <section class="CSS">
-    <h3>5. CSS: Styling the Web</h3>
+    <h2> What is CSS?</h2>
     <p>CSS is the magic wand that transforms plain HTML into visually stunning, interactive experiences. With colors, fonts, layouts, and animations, CSS gives personality to your webpage, making it both functional and beautiful.</p>
 
     <section class="color">
         <article>
-            <h4>(a) Color & Background: Painting the Web </h4>
+            <h3>5. Painting the Web </h3>
+            <h4> Color & Background </h4>
             <p>CSS is your digital paintbrush, turning dull pages into vibrant masterpieces. Whether you're crafting a serene pastel paradise or a bold, high-contrast statement, color and background properties set the tone, mood, and personality of your webpage with just a few strokes of code</p>
             <pre>
                 <code>
-                    h1 {
+                    p {
                 color: crimson; /* Changes text color */
                 background-color: lightgoldenrodyellow; /* Adds background color */
                     }
@@ -225,7 +224,8 @@
     
     <section class="font">
         <article>
-            <h4>(b) Font Styling: The Web’s Handwriting </h4>
+            <h3>6. The Web’s Handwriting </h3>
+            <h4> Font Styling </h4>
             <p>Fonts are the voice of your webpage, speaking volumes before a single word is read. Whether whispering elegance, shouting bold statements, font properties let you shape how your content is perceived and experienced</p>
             <pre>
                 <code>
@@ -237,28 +237,30 @@
                     }
                 </code>
             </pre>
-            <p class="font-ex">this is a paragraph with font styling including font family, size, weight, style</p>
+            <p class="font-ex">This is a paragraph with font styling including font family, size, weight, style</p>
         </article>
     </section>
     
     <section class="borders">
         <article>
-            <h4>(c) Borders & Shadows: Framing Your Elements </h4>
+            <h3>7. Framing Your Elements </h3>
+            <h4> Borders & Shadows </h4>
             <p>Borders and shadows add depth and emphasis to your webpage, helping elements stand out. Whether outlining sections for clarity or adding subtle shadows for a layered effect, these properties enhance both structure and visual appeal</p>
             <pre>
                 <code>
-                    border: 3px solid #8B4513; /* Chocolate brown border */
+                    border: 3px solid #9a86fd; /* neon purple border */
                     border-radius: 10px; /* Smooth, rounded corners */
-                    box-shadow: 5px 5px 10px gray; /* Adds depth */
+                    box-shadow: 5px 5px 10px rgb(67, 55, 98); /* Adds depth */
                 </code>
             </pre>
-            <p>This is a paragraph with borders and shadows </p>
+            <p class="borders-ex">This is a paragraph with borders and shadows </p>
         </article>
     </section>
     
     <section class="layout">
         <article>
-            <h4>(d) Layout & Spacing: The Art of Arrangement</h4>
+            <h3>8. The Art of Arrangement </h3>
+            <h4> Layout & Spacing</h4>
             <p>Spacing properties like margin and padding ensure your content is well-balanced, preventing it from feeling too cramped or too spread out. They create a sense of organization and readability, making your layout more visually appealing.</p>
             <pre>
                 <code>
@@ -268,22 +270,34 @@
                     justify-content: center; /* Centers items horizontally */
                 </code>
             </pre>
-            <p> This is a paragraph with margin, padding, display and justify-content</p>
+            <p class="layout-ex"> This is a paragraph with margin, padding, display and justify-content</p>
         </article>
     </section>
     
-    <section>
-        <article class="transition">
-            <h4>(e) Transitions & Animations: Bringing Pages to Life</h4>
+    <section class="transition">
+        <article>
+            <h3>8. Bringing Pages to Life </h3>
+            <h4> Transitions & Animations</h4>
             <p>Animation and transition properties bring your webpage to life by making elements move, fade, or transform smoothly. They enhance user experience by adding dynamic interactions that feel natural and engaging.</p>
             <pre>
                 <code>
-                    transition: all 0.3s ease-in-out; /* Smooth effect when hovering */
-                    :hover {
+                    .button {
+                        transition: all 0.3s ease-in-out; /* Smooth effect when hovering */
+                    }
+
+                    .button:hover {
                         transform: scale(1.1); /* Slightly enlarges on hover */
                     }
                 </code>
             </pre>
+            <p>
+                Remember the Name field you tried earlier? This is the same input field, but now it includes transition and transform CSS properties.
+            </p>
+            <form class="form1">
+                <lable for="name"> Name:</lable> 
+                <input type="text" id="name" name="name"><br>
+                <button type="submit">submit</button>
+            </form>
         </article>
     </section>
 </section>
