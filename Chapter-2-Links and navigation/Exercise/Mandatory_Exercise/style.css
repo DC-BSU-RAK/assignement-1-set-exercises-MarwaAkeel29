@@ -2,6 +2,8 @@
     height: 100%;
     width: 220px; /* Sidebar width */
     background-color: #1a1a2e; /* Dark blue, fits Viking/Dragon theme */
+    border-right: 5px solid#db8b13f9;
+    border-left: 5px solid#db8b13f9;
     position: fixed;
     padding-top: 20px;
     transition: 0.3s;
@@ -39,9 +41,11 @@ h3 {
     color: #db8b13f9;
 }
 
-.overview-flex, .key-flex, .characters{
+.overview-flex, .key-flex, .characters, .cast{
     display: flex;
     flex-direction: column;
+    border: 5px solid#db8b13f9;
+    background-color: #1a1a2e;
     border-radius: 50px;
     align-items: center;
     text-align: center;
@@ -52,6 +56,37 @@ h3 {
 }
 
 .overview-text, .additional-info {
-    color: black;
+    color: white;
     max-width: 600px;
 }
+
+.info-grid, .additional-info{
+    text-align: left;
+    color: white;
+}
+
+.overview-text blockquote {
+    font-style: italic;
+    font-size: 1.3rem;
+    color:aliceblue; /* Dark Blue */
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color:#1a1a2e;
+    border-radius: 25px;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 10px 15px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: 0.4;
+}
+
+.button:hover {
+    background-color: #db8b13f9;
+}
+
+
+
