@@ -41,7 +41,10 @@ h3 {
     color: #db8b13f9;
 }
 
-.overview-flex, .key-flex, .characters, .cast{
+.overview-flex,
+.key-flex,
+.characters,
+.cast {
     display: flex;
     flex-direction: column;
     border: 5px solid#db8b13f9;
@@ -86,6 +89,39 @@ h3 {
 
 .button:hover {
     background-color: #db8b13f9;
+}
+
+.character-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.character-box {
+    background-color: #31313f;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 4px 4px 10px #db8b13f9; /* Fiery shadow effect */
+    margin-bottom: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.character-box h3 {
+    margin-bottom: 5px;
+    color: #db8b13f9; /* Fiery Dragon-Like Color */
+}
+
+.character-box p {
+    font-weight: normal;
+}
+
+.character-box:hover{
+    background-color: #1a1a2e;
 }
 
 
