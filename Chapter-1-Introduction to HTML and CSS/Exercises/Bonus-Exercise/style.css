@@ -40,3 +40,71 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+/* Section Variations */
+.text_formatting, 
+.html_tags, 
+.links_media, 
+.lists_forms, 
+.color,
+.font,
+.borders,
+.layout,
+.transition {
+    box-shadow: 4px 4px 10px #5b5780f9;
+    background-color: #282846; /* Lighter dark tone */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #9a86fd; /* Soft purple accent */
+    border-bottom: 2px solid #9a86fd;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #9a86fd;
+    font-size: 1.5rem;
+}
+
+h4 {
+    
+    font-size: 1.2rem;
+}
+
+/* Code Block Styles */
+code {
+    
+    padding: 4px;
+    border-radius: 5px;
+    font-family: monospace;
+    color: #9a86fd;
+}
+
+pre {
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
+
+/* Links */
+a {
+    color: #9a86fd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
