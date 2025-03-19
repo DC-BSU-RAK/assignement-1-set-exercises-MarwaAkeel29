@@ -108,3 +108,81 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.code-headings span:nth-child(1) { font-size: 2em; }
+.code-headings span:nth-child(2) { font-size: 1.8em; }
+.code-headings span:nth-child(3) { font-size: 1.6em; }
+.code-headings span:nth-child(4) { font-size: 1.4em; }
+.code-headings span:nth-child(5) { font-size: 1.2em; }
+.code-headings span:nth-child(6) { font-size: 1em; }
+
+.iframe {
+    width: 650px; 
+    height: 300px;
+    border: #241d47;
+    margin-left: 65px;
+    margin-right: 65px;
+}
+
+.form, .form1{
+    color: #9a86fd;
+    width: 200px;
+    padding: 15px;
+    text-align: left;
+    font-family: sans-serif;
+}
+
+.form input, .form1 input{
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 2px solid #241d47;
+    border-radius: 5px;
+}
+
+.form button, .form1 button {
+    background: #9a86fd;
+    color: #241d47;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #c1bae0;   
+}
+
+.color-ex {
+    color: crimson; 
+    background-color: lightgoldenrodyellow; 
+}
+
+.font-ex {
+    font-family: "Courier New", monospace; /* Choose a font */
+    font-size: 20px; /* Adjust text size */
+    font-weight: bold; /* Make it stand out */
+    font-style: italic; /* Add some flair */
+}
+
+.borders-ex {
+    border: 3px solid #9a86fd; /* neon purple border */
+    border-radius: 10px; /* Smooth, rounded corners */
+    box-shadow: 5px 5px 10px rgb(67, 55, 98); /* Adds depth */
+}
+
+.layout-ex {
+    margin: 20px; /* Space outside an element */
+    padding: 15px; /* Space inside an element */
+    display: flex; /* Aligns items neatly */
+    justify-content: center; /* Centers items horizontally */
+}
+
+.form1 {
+    transition: all 0.9s ease-in-out; /* Smooth effect when hovering */
+}
+
+.form1 button:hover{
+    background: #9a86fd;
+    transform: scale(1.1); /* Slightly enlarges on hover */
+}
