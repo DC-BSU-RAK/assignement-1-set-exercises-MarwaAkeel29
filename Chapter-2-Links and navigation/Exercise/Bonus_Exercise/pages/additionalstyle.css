@@ -1,0 +1,221 @@
+/* ------------------------ */
+/* Sidebar Navigation (Mandatory Format) */
+/* ------------------------ */
+.sidenav {
+    height: 100%;
+    width: 220px; /* Sidebar width */
+    background-color: #1a1a2e; /* Dark blue, fits Viking/Dragon theme */
+    border-right: 10px solid#db8b13f9;
+    border-left: 10px solid#db8b13f9;
+    position: fixed;
+    padding-top: 20px;
+    transition: 0.3s;
+    top: 0;
+    left: 0;
+}
+
+.sidenav a {
+    display: block;
+    font-size: 21px;
+    font-weight: bold;
+    color: white;
+    padding: 12px 15px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.sidenav a:hover {
+    background-color: #f09308f9; /* Dragon-like fiery color */
+    color: white;
+}
+
+.sidenav a.active {
+    background-color: #b3761bf9; /* Fiery color */
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #db8b13f9;
+}
+
+/* ------------------------ */
+/* Content Formatting (Overview Page) */
+/* ------------------------ */
+.main-content {
+    margin-left: 210px; /* Adjust to match sidebar width */
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: #db8b13f9;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #db8b13f9;
+}
+
+.overview-flex{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+.key-flex,.cast {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 90px;
+}
+
+.characters {
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 90px; 
+}
+
+
+.overview-flex,
+.key-flex,
+.characters,
+.cast {
+    display: flex;
+    flex-direction: column;
+    border: 10px solid#db8b13f9;
+    background-color: #1a1a2e;
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+.overview-text, .additional-info {
+    color: white;
+    max-width: 600px;
+}
+
+.info-grid, .additional-info{
+    text-align: left;
+    color: white;
+}
+
+.overview-text blockquote {
+    font-style: italic;
+    font-size: 1.3rem;
+    color:aliceblue; /* Dark Blue */
+    margin-bottom: 10px;
+}
+
+.button {
+    display: inline-block;
+    background-color:#1a1a2e;
+    border-radius: 25px;
+    font-weight: bold;
+    color: aliceblue;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    transition: 0.4;
+}
+
+.button:hover {
+    background-color: #db8b13f9;
+}
+
+.character-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.character-box {
+    background-color: #31313f;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 4px 4px 10px #db8b13f9; /* Fiery shadow effect */
+    margin-bottom: 5px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.character-box h3 {
+    margin-bottom: 5px;
+    color: #db8b13f9; /* Fiery Dragon-Like Color */
+}
+
+.character-box p {
+    font-weight: normal;
+}
+
+.character-box:hover{
+    background-color: #1a1a2e;
+}
+
+.cast-grid, .crew-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between boxes */
+    justify-content: center; /* Ensures everything is centered */
+    align-items: center;
+    width: 70%;
+    max-width: 900px; /* Prevents excessive stretching */
+    margin: auto;
+    margin-bottom: 30px;
+}
+.cast-item:hover{
+    background-color: #1a1a2e;
+}
+
+.cast-item, .crew-item {
+    background-color: #31313f; 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 8px #db8b13f9; /* Fiery glow */
+    justify-content: center;
+}
+
+.character-name, .crew-role{
+    font-style: italic;
+    color: #ddd;
+}
+
+.crew-item:hover {
+    background-color: #1a1a2e;
+}
+
+.review-container {
+    border: 5px solid#db8b13f9;
+    background-color: #1a1a2e;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    margin-top: 170px;
+    margin-left: 280px;
+    margin-right: 30px;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 50px;
+    scroll-snap-type: none;
+}
+
+.review-container::-webkit-scrollbar {
+    display: none;
+}
+
+.review-card {
+    height: 100px;
+    min-width: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #1a1a2e;
+    color: white;
+    border-radius: 40px;
+    box-shadow: 0px 5px 10px #db8b13f9;
+}
+
+
