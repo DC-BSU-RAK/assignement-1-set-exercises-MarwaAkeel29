@@ -1,3 +1,126 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
 
+/* Header */
+header {
+    background-color: #17072b;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Welcome Section */
+.welcome {
+    flex: 2;
+    padding: 20px;
+}
+
+.welcome h2 {
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 3px solid #000;
+    display: inline-block;
+}
+
+.welcome p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Line Up Section */
+.sidebar {
+    flex: 1;
+    background-color: #172d67;
+    color: #ffffff;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 3px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar_images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.images img {
+    width: 48%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #8c15e9;
+    color: #ffffff;
+    text-align: center;
+    padding: 1px;
+    font-size: 14px;
+    margin-top: 20px;
+}
 
 
