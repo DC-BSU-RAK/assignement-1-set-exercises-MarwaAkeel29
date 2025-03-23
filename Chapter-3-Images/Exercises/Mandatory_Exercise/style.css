@@ -1,4 +1,4 @@
-/* General Body Styling - Gives a vintage aesthetic */
+/* General Body Styling */
 body {
     background-color: #f4f1e6; /* Aged paper background */
     font-family: 'Merriweather', serif; /* Vintage-style serif font */
@@ -35,6 +35,9 @@ h2 {
 
 /* Styling for image sections */
 .image-container {
+    background: rgba(255, 248, 220, 0.8); /* Light parchment effect */
+    border: 2px solid #c7a17a; /* Classic frame look */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adds depth to the section */
     padding: 15px;
     margin: 20px auto;
     width: 450px; /* consistent width */
@@ -45,8 +48,17 @@ h2 {
 .image-container img {
     width: 80%; /* Ensures images scale well */
     height: auto;
-    border-radius: 5px; /* Slightly rounded corners */
+    border-radius: 5px; /* rounded corners */
+    filter: sepia(40%) contrast(90%) brightness(90%); /* warm tint effect */
+    transition: transform 0.4s ease-in-out; /* hover effect */
 }
+
+/* zoom and reduced sepia on hover */
+.image-container img:hover {
+    transform: scale(1.05);  /*slightly enlarges elements when hovered */
+    filter: sepia(20%) contrast(95%) brightness(100%);
+}
+
 
 /* Styling for Photo Credits */
 .photo-credit {
@@ -63,7 +75,7 @@ h2 {
     font-weight: bold;
 }
 
-/* Underline effect when hovering over the credit link */
+/* hovering over the credit link */
 .photo-credit a:hover {
     text-decoration: underline;
 }
