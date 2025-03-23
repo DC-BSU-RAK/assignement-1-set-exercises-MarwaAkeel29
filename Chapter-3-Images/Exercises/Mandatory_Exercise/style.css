@@ -1,1 +1,73 @@
+/* General Body Styling - Gives a vintage aesthetic */
+body {
+    background-color: #f4f1e6; /* Aged paper background */
+    font-family: 'Merriweather', serif; /* Vintage-style serif font */
+    color: #3e2c24; /* Warm brown text */
+    text-align: center;
+    padding: 20px;
+    margin: 80px;
+}
+
+/* Styling for Main Heading */
+h1 {
+    font-size: 36px;
+    color: #5a3e2b; /* Deep brown color */
+    text-transform: uppercase; /* Vintage typography */
+    letter-spacing: 2px; /* spacing for refined look */
+    border-bottom: 3px solid #d4a373; /* underline */
+    display: inline-block;
+    padding-bottom: 5px;
+    margin: 30px;
+}
+
+/* Styling for description text */
+.description {
+    font-style: italic; /* italic font */
+    margin: 10px;
+}
+
+/* Styling for Subheadings */
+h2 {
+    font-size: 24px;
+    color: #704214; /* Warm coffee color */
+    font-style: italic; /* italic as per theme */
+}
+
+/* Styling for image sections */
+.image-container {
+    padding: 15px;
+    margin: 20px auto;
+    width: 450px; /* consistent width */
+    border-radius: 10px; /* Smooth edges */
+}
+
+/* Vintage Image Effects */
+.image-container img {
+    width: 80%; /* Ensures images scale well */
+    height: auto;
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+/* Styling for Photo Credits */
+.photo-credit {
+    font-size: 14px;
+    color: #5a3e2b; /* Matching the heading for consistency */
+    font-style: italic; 
+    margin-top: 8px;  /*top margin for clarity */
+}
+
+/* Styling for credit links */
+.photo-credit a {
+    color: #704214; /* Warm brown color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Underline effect when hovering over the credit link */
+.photo-credit a:hover {
+    text-decoration: underline;
+}
+
+
+
 
