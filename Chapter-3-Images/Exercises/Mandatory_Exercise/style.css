@@ -8,13 +8,19 @@ body {
     margin: 80px;
 }
 
+/* Header Section */
+header {
+    padding: 20px;
+    background-color: rgba(244, 241, 230, 0.9); /* Soft parchment look */
+}
+
 /* Styling for Main Heading */
 h1 {
     font-size: 36px;
     color: #5a3e2b; /* Deep brown color */
     text-transform: uppercase; /* Vintage typography */
-    letter-spacing: 2px; /* spacing for refined look */
-    border-bottom: 3px solid #d4a373; /* underline */
+    letter-spacing: 2px; /* Spacing for refined look */
+    border-bottom: 3px solid #d4a373; /* Underline */
     display: inline-block;
     padding-bottom: 5px;
     margin: 30px;
@@ -22,15 +28,20 @@ h1 {
 
 /* Styling for description text */
 .description {
-    font-style: italic; /* italic font */
+    font-style: italic; /* Italic font */
     margin: 10px;
+}
+
+/* Main Section */
+main {
+    padding: 20px;
 }
 
 /* Styling for Subheadings */
 h2 {
     font-size: 24px;
     color: #704214; /* Warm coffee color */
-    font-style: italic; /* italic as per theme */
+    font-style: italic; /* Italic as per theme */
 }
 
 /* Styling for image sections */
@@ -40,7 +51,7 @@ h2 {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Adds depth to the section */
     padding: 15px;
     margin: 20px auto;
-    width: 450px; /* consistent width */
+    width: 450px; /* Consistent width */
     border-radius: 10px; /* Smooth edges */
 }
 
@@ -48,24 +59,23 @@ h2 {
 .image-container img {
     width: 80%; /* Ensures images scale well */
     height: auto;
-    border-radius: 5px; /* rounded corners */
-    filter: sepia(40%) contrast(90%) brightness(90%); /* warm tint effect */
-    transition: transform 0.4s ease-in-out; /* hover effect */
+    border-radius: 5px; /* Rounded corners */
+    filter: sepia(40%) contrast(90%) brightness(90%); /* Warm tint effect */
+    transition: transform 0.4s ease-in-out; /* Smooth hover effect */
 }
 
-/* zoom and reduced sepia on hover */
+/* Zoom and reduced sepia on hover */
 .image-container img:hover {
-    transform: scale(1.05);  /*slightly enlarges elements when hovered */
-    filter: sepia(20%) contrast(95%) brightness(100%);
+    transform: scale(1.05); /* Slightly enlarges elements when hovered */
+    filter: sepia(20%) contrast(95%) brightness(100%); /* CSS filters */
 }
-
 
 /* Styling for Photo Credits */
 .photo-credit {
     font-size: 14px;
-    color: #5a3e2b; /* Matching the heading for consistency */
-    font-style: italic; 
-    margin-top: 8px;  /*top margin for clarity */
+    color: #5a3e2b; /* Text color */
+    font-style: italic;
+    margin-top: 8px; /* Top margin */
 }
 
 /* Styling for credit links */
@@ -75,10 +85,21 @@ h2 {
     font-weight: bold;
 }
 
-/* hovering over the credit link */
+/* Hover effect on credit link */
 .photo-credit a:hover {
     text-decoration: underline;
 }
+
+/* Footer Section */
+footer {
+    background-color: rgba(244, 241, 230, 0.9); /* Matches header */
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #5a3e2b;
+    border-top: 3px solid #d4a373; /* Separating line for visual structure */
+}
+
 
 
 
