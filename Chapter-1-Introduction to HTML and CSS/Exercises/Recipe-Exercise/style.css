@@ -1,12 +1,12 @@
+/* Global style  */
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
+    margin: 50px;
     padding: 20px;
     line-height: 1.7;
     background-image: url("https://i.pinimg.com/236x/51/ff/82/51ff8270b6412e693391a66dd1ac97fe.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: auto;
 }
 
 .header {
@@ -174,7 +174,7 @@ ol li p {
     font-weight: bold;
 }
 
-.button button{
+.button a {
     display: inline-block;
     background-color: #562d15;
     border-radius: 25px;
@@ -183,9 +183,21 @@ ol li p {
     padding: 10px 15px;
     margin-top: 10px;
     text-decoration: none;
-    transition: 0.4;
+    transition: 0.4s ease-in-out;
 }
 
-.button:hover button {
+.button a:hover {
     background-color: #5e4117f9;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    background: #533016;
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+    border-top: 3px solid #9C6644;
+    border-left: 3px solid #9C6644;
+    border-right: 3px solid #9C6644;
 }
