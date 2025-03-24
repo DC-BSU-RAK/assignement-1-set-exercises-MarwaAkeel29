@@ -212,7 +212,7 @@
             <p>CSS is your digital paintbrush, turning dull pages into vibrant masterpieces. Whether you're crafting a serene pastel paradise or a bold, high-contrast statement, color and background properties set the tone, mood, and personality of your webpage with just a few strokes of code</p>
             <pre>
                 <code>
-                    p {
+                    p  {
                 color: crimson; /* Changes text color */
                 background-color: lightgoldenrodyellow; /* Adds background color */
                     }
@@ -300,6 +300,52 @@
             </form>
         </article>
     </section>
+
+    <section class="clipping-masking">
+        <article>
+            <h3>10. Shaping Creativity</h3>
+            <h4>Clipping & Masking</h4>
+            <p>Clip and mask properties allow you to create unique shapes and visual effects, making elements stand out beyond traditional rectangles.</p>
+            <pre>
+                <code>
+                    /* Clipping Example */
+                    .clip-box {
+                        width: 200px;
+                        height: 200px;
+                        background: coral;
+                        clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-weight: bold;
+                    }
+                    
+                    /* Masking Example */
+                    .mask-box {
+                        width: 200px;
+                        height: 200px;
+                        background: url('https://via.placeholder.com/200') no-repeat center/cover;
+                        mask-image: radial-gradient(circle, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-weight: bold;
+                    }
+                </code>
+            </pre>
+
+            <h5>Clipping Example:</h5>
+            <div class="clip-box">Clipped Element</div>
+    
+            <h5>Masking Example:</h5>
+            <div class="mask-box">Masked Element</div>
+    
+            <p class="clip-mask-ex">This section demonstrates how to clip an element into a triangle and apply a circular mask.</p>
+        </article>
+    </section>
+    
 </section>
       
 </body>
