@@ -1,0 +1,21 @@
+/* Ensure full-page centering */
+body {
+    display: flex; /* Used flexbox for centering */
+    min-height: 100vh; /* Full viewport height */
+    background-color: #000; /* Background color */
+}
+
+/* Ensure the video is properly centered */
+.video-container {
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Full width for flexibility */
+}
+
+video {
+    width: 400px; /* Set video width */
+    height: 600px; /* Set video height */
+    max-width: 100%; /* Prevents overflow */
+    border-radius: 10px; /* Rounded corners */
+}
