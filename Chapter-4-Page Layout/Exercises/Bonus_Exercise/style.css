@@ -1,0 +1,70 @@
+body {
+    background-color: #1F2933;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    background-color: #19222b; /* Darker background */
+    box-shadow: 3px 0 10px #69818D;
+    height: 100%;
+    width: 230px; /* Sidebar width */
+    position: fixed;
+    padding-top: 20px;
+    transition: 0.3s;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    color: white;
+    padding-left: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2rem;
+}
+
+.sidebar ul li a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.sidebar ul li a:hover {
+    border-radius: 64px 48px 16px 96px;
+    box-shadow: 0px 0px 5px #2d66ac,  /* Glow effect */
+    0 0 25px #1b3892, 0 0 50px #366fad,
+    0 0 100px #365ead, 0 0 200px #8da3cd;
+}
+
+/* Active/Clicked Effect */
+.sidebar ul li a:active {
+    background-color: #CBD2D9;
+    color: #101820; /* Dark text for contrast */
+}
+
+main {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #525c63;
+}
