@@ -76,16 +76,30 @@ input[type="text"] {
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 10px;
+    background-color: #19222b;
+    border-radius: 30px;
+    margin-left: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 50px;
+    scroll-snap-type: none;
+}
+
+.grid::-webkit-scrollbar{
+    display: none;
 }
 
 .box {
     background: #1F2933;
-    padding: 5px;
-    margin-bottom: 10px;
+    color: white;
+    height: 200px;
+    min-width: 200px;
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-top: 15px;
     border-radius: 50px 0;
     text-align: center;
     transition: transform 0.3s ease-in-out;
