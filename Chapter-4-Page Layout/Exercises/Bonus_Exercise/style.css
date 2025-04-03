@@ -1,12 +1,11 @@
 body {
     background-color: #1F2933;
-    color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: cursive;
 }
 
 .sidebar {
     background-color: #19222b; /* Darker background */
-    box-shadow: 3px 0 10px #69818D;
+    box-shadow: 0px 10px 10px #5DA9E9;
     height: 100%;
     width: 230px; /* Sidebar width */
     position: fixed;
@@ -18,7 +17,7 @@ body {
 
 .sidebar h2 {
     color: white;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .sidebar ul {
@@ -28,32 +27,62 @@ body {
 
 .sidebar ul li {
     margin: 15px 0;
+    padding-top: 15px;
     padding-left: 10px;
     padding-right: 10px;
     font-size: 1.2rem;
 }
 
 .sidebar ul li a {
-    color: #ffffff; /* White text */
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
+   padding: 10px 20px;
+   text-transform: uppercase;
+   text-decoration: none;
+   border-bottom: 1px solid #5DA9E9;
+   font-size: 18px;
+   font-weight: 500;
+   color: #ffffff;
+   text-shadow: none;
+   background: transparent;
+   cursor: pointer;
+   box-shadow: transparent;
+   transition: 0.5s ease;
+   user-select: none;
 }
 
 /* Hover Effect */
 .sidebar ul li a:hover {
-    border-radius: 64px 48px 16px 96px;
-    box-shadow: 0px 0px 5px #2d66ac,  /* Glow effect */
-    0 0 25px #1b3892, 0 0 50px #366fad,
-    0 0 100px #365ead, 0 0 200px #8da3cd;
+   color: #ffffff;
+   background: #5DA9E9;
+   border-radius: 50px 0;
+   text-shadow: 
+   0 0 5px #ffffff,
+   0 0 10px #ffffff;
+   box-shadow: 
+   0 0 5px #5DA9E9,
+   0 0 20px #5DA9E9,
+   0 0 50px #5DA9E9;
 }
 
 /* Active/Clicked Effect */
 .sidebar ul li a:active {
     background-color: #CBD2D9;
     color: #101820; /* Dark text for contrast */
+}
+
+h1 {
+    font-family: cursive;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 42px #5DA9E9,
+    0 0 77px #5DA9E9;
+}
+
+h2{
+    font-family: cursive;
+    font-size: 20px;
+    color: #fff;
 }
 
 main {
@@ -69,10 +98,14 @@ header {
     border-bottom: 2px solid #525c63;
 }
 
-input[type="text"] {
+input {
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
+    box-shadow: 
+    0 0 7px #fff,
+    0 0 42px #5DA9E9,
+    0 0 77px #5DA9E9;
 }
 
 .grid {
@@ -95,6 +128,7 @@ input[type="text"] {
 .box {
     background: #1F2933;
     color: white;
+    box-shadow: 0px 10px 10px #5DA9E9;
     height: 200px;
     min-width: 200px;
     padding: 15px;
@@ -107,7 +141,12 @@ input[type="text"] {
 
 .box:hover {
     transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0px 5px 10px #5DA9E9;
+    text-shadow: 
+   0 0 5px #ffffff,
+   0 0 10px #ffffff;
+   box-shadow:
+   0 0 5px #5DA9E9,
+   0 0 20px #5DA9E9;
 }
 
 .box:active {
