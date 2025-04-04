@@ -1,10 +1,10 @@
 body {
-    background-color: #1F2933;
+    background: linear-gradient(to bottom, #0A0F1E, #101D2C, #192B3B);
     font-family: cursive;
 }
 
 .sidebar {
-    background-color: #19222b; /* Darker background */
+    background: linear-gradient(to top, #162A38, #101D2C, #0A0F1E);
     box-shadow: 0px 10px 10px #5DA9E9;
     height: 100%;
     width: 230px; /* Sidebar width */
@@ -95,7 +95,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 2px solid #525c63;
+    border-bottom: 1px solid #5DA9E9;
 }
 
 input {
@@ -109,7 +109,7 @@ input {
 }
 
 .grid {
-    background-color: #19222b;
+    background: linear-gradient(to bottom, #101D2C, #162A38);
     border-radius: 30px;
     margin-left: 20px;
     align-items: center;
@@ -126,7 +126,7 @@ input {
 }
 
 .box {
-    background: #1F2933;
+    background: linear-gradient(to top, #0A0F1E, #101D2C);
     color: white;
     box-shadow: 0px 10px 10px #5DA9E9;
     height: 200px;
@@ -136,11 +136,11 @@ input {
     margin-top: 15px;
     border-radius: 50px 0;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
 .box:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.08); /* Slight zoom effect on hover */
     text-shadow: 
    0 0 5px #ffffff,
    0 0 10px #ffffff;
