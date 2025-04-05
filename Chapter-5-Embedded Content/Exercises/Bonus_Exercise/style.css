@@ -1,1 +1,72 @@
-
+/* Background styling */
+body {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden; /* disables scroll */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+}
+  
+  /* Section for the heading */
+  header {
+    margin-bottom: 40px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  /* Container for the sound cards */
+  .soundboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  /* 💎 Sound Card Styling - Glowing crystal look */
+  .sound-card {
+    background: rgba(255, 255, 255, 0.05); /* frosted glass style */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.2),
+                0 0 40px rgba(0, 255, 255, 0.15);
+    padding: 20px;
+    width: 240px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* blur background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for card interactivity */
+  .sound-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.4),
+                0 0 60px rgba(0, 255, 255, 0.3);
+  }
+  
+  /* Title for each sound */
+  .sound-card p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  /*  Audio player styling */
+  audio {
+    width: 100%;
+    outline: none;
+    border-radius: 40px;
+  }
+  
+  
