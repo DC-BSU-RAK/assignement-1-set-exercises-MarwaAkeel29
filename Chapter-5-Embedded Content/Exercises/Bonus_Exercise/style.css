@@ -1,6 +1,6 @@
 /* Background styling */
 body {
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(135deg, #1a0046, #3f0071, #220048);
     height: 100vh;
     margin: 0;
     padding: 20px;
@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     color: #fff;
-}
+  }
   
   /* Section for the heading */
   header {
@@ -22,6 +22,13 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #fff;
+    text-shadow:
+      -2px 2px #ff51c5,
+      2px -2px #00f6ff,
+      0 0 5px #fff;
+    letter-spacing: 2px;
+    transform: skewX(-1deg);
   }
   
   /* Container for the sound cards */
@@ -34,25 +41,30 @@ body {
     width: 100%;
   }
   
-  /* 💎 Sound Card Styling - Glowing crystal look */
+  /* Sound Card Styling - Glitch/Crystal look */
   .sound-card {
-    background: rgba(255, 255, 255, 0.05); /* frosted glass style */
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    box-shadow: 0 0 20px rgba(255, 0, 255, 0.2),
-                0 0 40px rgba(0, 255, 255, 0.15);
+    box-shadow:
+      0 0 20px rgba(255, 0, 255, 0.2),
+      0 0 40px rgba(0, 255, 255, 0.15);
     padding: 20px;
     width: 240px;
     text-align: center;
-    backdrop-filter: blur(10px); /* blur background */
+    backdrop-filter: blur(10px);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   /* Hover effect for card interactivity */
   .sound-card:hover {
+    background:#240852;
     transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(255, 0, 255, 0.4),
-                0 0 60px rgba(0, 255, 255, 0.3);
+    box-shadow:
+      0 0 30px #ff51c5,
+      0 0 60px #00f6ff,
+      5px 5px 20px #ff51c5,
+      -5px -5px 20px #00f6ff;
   }
   
   /* Title for each sound */
@@ -60,13 +72,19 @@ body {
     margin-bottom: 10px;
     font-size: 1.2rem;
     font-weight: 600;
+    color: #fff;
+    text-shadow:
+      -1px 1px #ff51c5,
+      1px -1px #00f6ff,
+      0 0 3px #fff;
+    transform: skewX(-0.5deg);
   }
   
-  /*  Audio player styling */
+  /* Audio player styling */
   audio {
     width: 100%;
     outline: none;
-    border-radius: 40px;
   }
+  
   
   
