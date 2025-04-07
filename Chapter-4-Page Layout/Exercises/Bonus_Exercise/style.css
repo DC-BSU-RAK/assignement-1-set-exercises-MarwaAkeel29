@@ -85,6 +85,10 @@ h2{
     color: #fff;
 }
 
+ h3 {
+    margin-bottom: 5px;
+}
+
 main {
     margin-left: 220px;
     padding: 20px;
@@ -136,10 +140,25 @@ input {
     margin-top: 15px;
     border-radius: 50px 0;
     text-align: center;
+    overflow: hidden;
+    position: relative;
     transition: transform 0.4s ease-in-out;
 }
 
+
+.box .description {
+    opacity: 0;
+    max-height: 0;
+    font-size: 0.85rem;
+    color: white;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
 .box:hover {
+    height: 300px;
+    box-shadow: 0 0 5px #5DA9E9, 0 0 20px #5DA9E9;
     transform: scale(1.08); /* Slight zoom effect on hover */
     text-shadow: 
    0 0 5px #ffffff,
@@ -149,9 +168,15 @@ input {
    0 0 20px #5DA9E9;
 }
 
-.box:active {
-    background-color: #0e1b27;
+.box:hover .description {
+    opacity: 1;
+    max-height: 100px; /* enough room for 2 lines of text */
 }
+
+.box:active {
+    background-color: #e1e5e8;
+}
+
 
 .box img {
     border-radius: 30px;
