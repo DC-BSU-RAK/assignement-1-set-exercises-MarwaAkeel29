@@ -192,3 +192,27 @@ input {
     font-size: 1rem;
     color: #ffffff;
 }
+
+.progress-container {
+    background-color: #1f2a3c;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 12px;
+    margin-top: 10px;
+    box-shadow: inset 0 0 5px #5DA9E9;
+}
+
+
+.progress-container div{
+    height: 100%;
+    background: linear-gradient(to right, #5DA9E9, #72e0d1);
+    border-radius: 20px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Width classes */
+.progressbar-30  { width: 30%; }
+.progressbar-50  { width: 50%; }
+.progressbar-60  { width: 60%; }
+.progressbar-80  { width: 80%; }
+.progressbar-100 { width: 100%; }
