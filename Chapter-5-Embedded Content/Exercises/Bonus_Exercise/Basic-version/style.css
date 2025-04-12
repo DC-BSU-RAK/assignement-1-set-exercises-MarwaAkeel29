@@ -45,6 +45,8 @@ body {
   /* Sound Card Styling - Glitch/Crystal look */
   .sound-card {
     border: 2px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 20px rgba(0, 246, 255, 0.2);
     border-radius: 20px;
     padding: 20px;
     width: 250px;
@@ -56,7 +58,13 @@ body {
   
   /* Hover effect for card interactivity */
   .sound-card:hover {
-    transform: scale(1.05);    
+    transform: translateY(7px) skewX(-1deg);
+    background: linear-gradient(
+    135deg,
+    rgba(20, 237, 244, 0.349),
+    rgba(243, 42, 176, 0.377)
+    );
+    cursor: pointer;   
   }
 
   /* Glowing pulse animation */
@@ -80,6 +88,7 @@ body {
   
   /* Title for each sound */
   .sound-card h2 {
+    transition: transform 0.3s ease;
     margin-bottom: 10px;
     font-size: 1.2rem;
     font-weight: 600;
@@ -90,9 +99,21 @@ body {
       0 0 3px #fff;
     transform: skewX(-0.5deg);
   }
+
+  @keyframes colorGlow {
+    0%   { text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff; color: #00f6ff; }
+    50%  { text-shadow: 0 0 5px #ff51c5, 0 0 10px #ff51c5; color: #ff51c5; }
+    100% { text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff; color: #00f6ff; }
+  }
+  
+  .sound-card:hover h2 {
+    animation: colorGlow 1.5s infinite;
+  }
+  
   
   .sound-card.playing {
     animation: glowPulse 1.5s infinite alternate;
   }
+
   
   
