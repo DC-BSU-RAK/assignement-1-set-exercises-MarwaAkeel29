@@ -1,119 +1,212 @@
 /* Background styling */
 body {
   background-image: url(https://static.vecteezy.com/system/resources/previews/008/813/769/non_2x/3d-render-of-flash-neon-and-light-glowing-on-dark-scene-speed-light-moving-lines-free-photo.jpg);
-    height: 100vh;
-    margin: 0;
-    padding: 20px;
-    overflow: hidden; /* disables scroll */
-    font-family: 'Orbitron', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    color: #fff;
-  }
-  
-  /* Section for the heading */
-  header {
-    margin-bottom: 30px;
-  }
-  
-  header h1 {
-    font-family: 'Monoton', cursive;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #fff;
-    text-shadow:
-      -2px 2px #ff51c5,
-      2px -2px #00f6ff,
-      0 0 5px #fff;
-    letter-spacing: 2px;
-    transform: skewX(-1deg);
-  }
-  
-  /* Container for the sound cards */
-  .soundboard {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1200px;
-    width: 100%;
-  }
-  
-  /* Sound Card Styling - Glitch/Crystal look */
-  .sound-card {
-    border: 2px solid rgba(255, 255, 255, 0.1);
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 20px rgba(0, 246, 255, 0.2);
-    border-radius: 20px;
-    padding: 20px;
-    width: 250px;
-    height: 100px;
-    text-align: center;
-    backdrop-filter: blur(10px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* Hover effect for card interactivity */
-  .sound-card:hover {
-    transform: translateY(7px) skewX(-1deg);
-    background: linear-gradient(
+  height: 100vh;
+  margin: 0;
+  padding: 40px;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Page heading */
+header {
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+  text-shadow:
+    -2px 2px #ff51c5,
+    2px -2px #00f6ff,
+    0 0 5px #fff;
+  letter-spacing: 2px;
+  transform: skewX(-1deg);
+}
+
+/* Main layout container: TTS on left, Soundboard on right */
+.soundboard-layout {
+  display: flex;
+  width: 100%;
+  max-width: 1100px;
+  justify-content: space-between;
+  gap: 30px;
+  flex-grow: 1;
+  overflow: visible;
+}
+
+/* TTS Panel on the left */
+.text-to-speech {
+  flex: 1;
+  min-width: 100px;
+  height: 300px;
+  margin-top: 45px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 15px rgba(255, 81, 197, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-to-speech h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  text-shadow:
+    -1px 1px #ff51c5,
+    1px -1px #00f6ff,
+    0 0 3px #fff;
+}
+
+.text-to-speech textarea {
+  width: 90%;
+  height: 100px;
+  margin-left: 5px;
+  padding: 10px;
+  font-family: 'Orbitron', sans-serif;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  backdrop-filter: blur(5px);
+  margin-bottom: 15px;
+}
+
+.text-to-speech button {
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #00f6ff, #ff51c5);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.text-to-speech button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00f6ff, 0 0 20px #ff51c5;
+}
+
+/* Soundboard wrapper on the right */
+.soundboard-wrapper {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: visible;
+  margin-top: -40px;
+}
+
+/* Pagination buttons */
+.pagination-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: transform 0.2s ease;
+}
+
+.arrow:hover {
+  transform: scale(1.2);
+}
+
+.arrow.hidden {
+  visibility: hidden;
+}
+
+/* Soundboard grid */
+.soundboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  max-height: 700px;
+}
+
+/* Individual Sound Card */
+.sound-card {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(0, 246, 255, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+  width: 150px;
+  height: 80px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sound-card:hover {
+  transform: translateY(7px) skewX(-1deg);
+  background: linear-gradient(
     135deg,
     rgba(20, 237, 244, 0.349),
     rgba(243, 42, 176, 0.377)
-    );
-    cursor: pointer;   
-  }
+  );
+  cursor: pointer;
+}
 
-  /* Glowing pulse animation */
+.sound-card h2 {
+  transition: transform 0.3s ease;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  text-shadow:
+    -1px 1px #ff51c5,
+    1px -1px #00f6ff,
+    0 0 3px #fff;
+  transform: skewX(-0.5deg);
+}
+
+/* Playing Animation */
 @keyframes glowPulse {
   0% {
-    box-shadow:
-      0 0 6px #00f9ff,
-      0 0 10px #00f9ff;
+    box-shadow: 0 0 6px #00f9ff, 0 0 10px #00f9ff;
   }
   50% {
-    box-shadow:
-      0 0 56px #c00582,
-      0 0 90px #00f9ff;
+    box-shadow: 0 0 56px #c00582, 0 0 90px #00f9ff;
   }
-  1000% {
-    box-shadow:
-      0 0 50px #c00582,
-      0 0 90px #00f9ff;
+  100% {
+    box-shadow: 0 0 50px #c00582, 0 0 90px #00f9ff;
   }
 }
-  
-  /* Title for each sound */
-  .sound-card h2 {
-    transition: transform 0.3s ease;
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #fff;
-    text-shadow:
-      -1px 1px #ff51c5,
-      1px -1px #00f6ff,
-      0 0 3px #fff;
-    transform: skewX(-0.5deg);
-  }
 
-  @keyframes colorGlow {
-    0%   { text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff; color: #00f6ff; }
-    50%  { text-shadow: 0 0 5px #ff51c5, 0 0 10px #ff51c5; color: #ff51c5; }
-    100% { text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff; color: #00f6ff; }
-  }
-  
-  .sound-card:hover h2 {
-    animation: colorGlow 1.5s infinite;
-  }
-  
-  
-  .sound-card.playing {
-    animation: glowPulse 1.5s infinite alternate;
-  }
+.sound-card.playing {
+  animation: glowPulse 1.5s infinite alternate;
+}
+
+/* Glow text animation */
+@keyframes colorGlow {
+  0%   { text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff; color: #00f6ff; }
+  50%  { text-shadow: 0 0 5px #ff51c5, 0 0 10px #ff51c5; color: #ff51c5; }
+  100% { text-shadow: 0 0 5px #00f6ff, 0 0 10px #00f6ff; color: #00f6ff; }
+}
+
+.sound-card:hover h2 {
+  animation: colorGlow 1.5s infinite;
+}
 
 
   
