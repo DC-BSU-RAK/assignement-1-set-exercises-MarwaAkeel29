@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alan Partridge Soundboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Page heading -->
+  <header>
+    <h1>Alan Partridge Soundboard</h1>
+  </header>
+
+  <main class="soundboard-layout">
+  
+    <!-- TTS on the left -->
+    <section class="text-to-speech">
+      <h2>Text to Speech</h2>
+      <textarea id="speech-input" placeholder="Type something Partridge-y..."></textarea>
+      <button id="speak-button">Speak</button>
+    </section>
+  
+    <!-- Soundboard and pagination on the right -->
+    <section class="soundboard-wrapper">
+      <div class="pagination-controls">
+        <button id="prev-btn" class="arrow hidden">⬅️</button>
+        <button id="next-btn" class="arrow">➡️</button>
+      </div>
+  
+      <section class="soundboard">
+        <!-- sound cards here -->
+      <article class="sound-card">
+        <h2>Ah-Ha</h2>
+        <audio src="Audio/ah-ha.mp3"></audio>
+      </article>
+
+      <article class="sound-card">
+        <h2>Back of the net</h2>
+        <audio src="Audio/back-of-the-net.mp3"></audio>
+      </article>
+
+      <article class="sound-card">
+        <h2>Bang out of order</h2>
+        <audio src="Audio/bangoutoforder.mp3"></audio>
+      </article>
+
+      <article class="sound-card">
+        <h2>Dan</h2>
+        <audio src="Audio/dan.mp3"></audio>
+      </article>
+
+      <article class="sound-card">
+        <h2>Email of the evening</h2>
+        <audio src="Audio/emailoftheevening.mp3"></audio>
+      </article>
+
+      <article class="sound-card">
+        <h2>Hello Partridge</h2>
+        <audio src="Audio/hellopartridge.mp3"></audio>
+      </article>
+
+      <article class="sound-card">
+        <h2>I ate a scotch egg</h2>
+        <audio src="Audio/iateascotchegg.mp3"></audio>
+      </article>
+
+      <article class="sound-card">
+        <h2>Im Confused</h2>
+        <audio src="Audio/imconfused.mp3"></audio>
+      </article> 
+      </section>
+    </section>
+  </main>
+
+  <!-- JS file for audio interaction -->
+  <script src="index.js"></script>
+</body>
+</html>
+
+  
