@@ -176,7 +176,7 @@ header h1 {
   text-shadow:
     -1px 1px #ff51c5,
     1px -1px #00f6ff,
-    0 0 3px #fff;
+    0 0 2px #fff;
   transform: skewX(-0.5deg);
 }
 
