@@ -10,35 +10,33 @@
 
 /* BODY - GLITCH GRID BACKGROUND */
 body {
-  font-family: 'Press Start 2P', cursive;
-  background: #000;
-  background-image: radial-gradient(#22ddee 3px, transparent 1px),
-                    radial-gradient(#22ddee 1px, transparent 1px);
-  background-size: 40px 40px;
-  background-position: 0 0, 20px 20px;
-  color: #00ffcc;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  overflow: hidden;
-}
+    font-family: 'Press Start 2P', cursive;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+  }
 
-/* LINES OVERLAY */
-body::after {
-  content: '';
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: repeating-linear-gradient(
-    transparent 0px,
-    rgba(0, 255, 200, 0.05) 1px,
-    transparent 2px
-  );
-  pointer-events: none;
-  z-index: 999;
-}
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://img.pikbest.com/wp/202405/gas-station-glowing-and-vintage-car-a-cyberpunk-scene-with-vibrant-colors-fog-rain-reflections-on-the-asphalt-3d-illustration_9797955.jpg!w700wp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    z-index: -1;
+  }
+  
+
 
 /* MAIN CONTAINER */
 .calculator-container {
@@ -52,6 +50,7 @@ body::after {
   box-shadow: 0 0 15px #00e1fd, 0 0 30px #00e1fd inset;
   transition: transform 0.2s ease-in-out;
   position: relative;
+  z-index: 1;
 }
 
 .calculator-container:hover {
