@@ -47,3 +47,59 @@ speakButton.addEventListener('click', () => {
   }
 });
 
+// --------------------
+// Pagination Feature
+// --------------------
+
+// Convert NodeList to array to work easily with indexing
+const cards = Array.from(document.querySelectorAll('.sound-card'));
+
+// Pagination variables
+let currentPage = 0;
+const cardsPerPage = 9;
+const totalPages = Math.ceil(cards.length / cardsPerPage);
+
+// Get the arrow buttons
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+
+// Function to update which sound cards are visible
+function updatePagination() {
+  // First hide all cards
+  cards.forEach(card => {
+    card.style.display = 'none';
+  });
+
+  // Calculate the range of cards to show for current page
+  const start = currentPage * cardsPerPage;
+  const end = start + cardsPerPage;
+
+  for (let i = start; i < end && i < cards.length; i++) {
+    cards[i].style.display = 'block';
+  }
+
+  // Show or hide arrows based on the current page
+  prevBtn.classList.toggle('hidden', currentPage === 0);
+  nextBtn.classList.toggle('hidden', currentPage >= totalPages - 1);
+}
+
+// When user clicks the "Next" arrow
+nextBtn.addEventListener('click', () => {
+  if (currentPage < totalPages - 1) {
+    currentPage++;
+    updatePagination();
+  }
+});
+
+// When user clicks the "Previous" arrow
+prevBtn.addEventListener('click', () => {
+  if (currentPage > 0) {
+    currentPage--;
+    updatePagination();
+  }
+});
+
+// Show the first set of cards when the page loads
+updatePagination();
+
+
