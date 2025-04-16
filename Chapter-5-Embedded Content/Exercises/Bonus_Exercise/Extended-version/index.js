@@ -1,28 +1,49 @@
-// Select all elements with the class 'sound-card'
+// --------------------
+// Alan Partridge Soundboard - Extended Version
+// My JS file with audio playback, text-to-speech, and pagination
+// --------------------
+
+// Get all the sound card elements from the page
 const soundCards = document.querySelectorAll('.sound-card');
 
-// Loop through each sound card
+// Loop through each sound card to add click events for audio playback
 soundCards.forEach(card => {
-  // Get the audio element inside this specific card
-  const audio = card.querySelector('audio');
+  const audio = card.querySelector('audio'); // Each card has an <audio> inside it
 
-  // Added a click event listener to the whole card
+  // When the card is clicked
   card.addEventListener('click', () => {
-    // First, remove the 'playing' class from all cards to reset any active glowPulse animations
+    // Remove the glowing effect from all cards
     soundCards.forEach(c => c.classList.remove('playing'));
 
-    // Reset the audio so it starts from the beginning even if it was already playing
+    // Reset audio to the beginning and play
     audio.currentTime = 0;
-
-    // Play the audio file
     audio.play();
 
-    // Add the 'playing' class to trigger the glowPulse animation
+    // Add the glowing animation class to this card
     card.classList.add('playing');
 
-    // Once the audio finishes playing, remove the 'playing' class so the glow stops
+    // When the audio ends, remove the glowing effect
     audio.addEventListener('ended', () => {
       card.classList.remove('playing');
     });
   });
 });
+
+// --------------------
+// Text-to-Speech Feature
+// --------------------
+
+// Get the Speak button and the textarea
+const speakButton = document.getElementById('speak-button');
+const speechInput = document.getElementById('speech-input');
+
+// When Speak button is clicked
+speakButton.addEventListener('click', () => {
+  const text = speechInput.value; // Get what the user typed
+
+  if (text.trim() !== '') {
+    const speech = new SpeechSynthesisUtterance(text); // Create speech from text
+    speechSynthesis.speak(speech); // Speak it
+  }
+});
+
