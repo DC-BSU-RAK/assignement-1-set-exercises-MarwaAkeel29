@@ -217,4 +217,35 @@ h3 {
     background-color: #1a1a2e;
 }
 
+/* Shared fiery glow style */
+.character-box,
+.cast-item,
+.crew-item,
+.review-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect: float and intense glow */
+.character-box:hover,
+.cast-item:hover,
+.crew-item:hover,
+.review-card:hover {
+    animation: flicker 2s infinite;
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.8), 0 0 30px rgba(255, 70, 0, 0.6);
+}
+
+/* Flickering fire animation */
+@keyframes flicker {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
+    }
+    50% {
+        box-shadow: 0 0 18px rgba(255, 140, 0, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 140, 0, 0.6);
+    }
+}
+
 
