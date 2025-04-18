@@ -297,7 +297,6 @@ input {
     font-size: 1rem; /* Standard text size for checklist items */
     color: #e6f4ff; /* Light text color for better contrast on dark bg */
 }
-}
 
 .checklist-widget input {
     accent-color: #5DA9E9; /* Custom checkbox color */
