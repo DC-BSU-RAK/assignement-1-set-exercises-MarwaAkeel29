@@ -1,37 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alan Partridge Soundboard</title>
-  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<!DOCTYPE html> <!-- Declares the document as an HTML5 file -->
+<html lang="en"> <!-- Root element of the HTML document, with language set to English -->
+<head> <!-- Metadata and resources for the document -->
+  
+  <meta charset="UTF-8" /> <!-- Sets character encoding to UTF-8 for wide character support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Ensures responsive scaling on all screen sizes -->
+  <title>Alan Partridge Soundboard</title> <!-- Sets the page title in the browser tab -->
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&display=swap" rel="stylesheet"> <!-- Imports custom Google Fonts: Monoton and Orbitron -->
+  <link rel="stylesheet" href="style.css"> <!-- Links to the external CSS stylesheet for styling -->
 </head>
+
 <body>
+  <!-- Visible content of the web page -->
 
   <!-- Page heading -->
   <header>
-    <h1>Alan Partridge Soundboard</h1>
+    <h1>Alan Partridge Soundboard</h1> <!-- Displays the title of the soundboard -->
   </header>
 
-  <main class="soundboard-layout">
+  <main class="soundboard-layout"> <!-- Main content area of the page -->
   
     <!-- TTS on the left -->
-    <section class="text-to-speech">
-      <h2>Text to Speech</h2>
-      <textarea id="speech-input" placeholder="Type something Partridge-y..."></textarea>
-      <button id="speak-button">Speak</button>
+    <section class="text-to-speech"> <!-- Container for Text-to-Speech UI -->
+      <h2>Text to Speech</h2> <!-- Section heading -->
+      <textarea id="speech-input" placeholder="Type something Partridge-y..."></textarea> <!-- User input field for TTS -->
+      <button id="speak-button">Speak</button> <!-- Button to trigger TTS functionality -->
     </section>
   
     <!-- Soundboard and pagination on the right -->
-    <section class="soundboard-wrapper">
-      <div class="pagination-controls">
-        <button id="prev-btn" class="arrow hidden">&#8592;</button>
-        <button id="next-btn" class="arrow">&#8594;</button>
+    <section class="soundboard-wrapper"> <!-- Container for soundboard and pagination controls -->
+      <div class="pagination-controls"> <!-- Holds the navigation arrows -->
+        <button id="prev-btn" class="arrow hidden">&#8592;</button> <!-- Previous page button (hidden by default) -->
+        <button id="next-btn" class="arrow">&#8594;</button> <!-- Next page button -->
       </div>
   
-      <section class="soundboard">
-        <!-- sound cards here -->
+      <section class="soundboard"> <!-- A grid section that holds all the sound cards -->
+        <!-- Individual sound card containing a title and audio -->
       <article class="sound-card">
         <h2>Ah-Ha</h2>
         <p class="duration">2 sec</p> <!-- stays blank until JS updates it -->
@@ -88,25 +91,25 @@
 
       <article class="sound-card">
         <h2>Afraid So</h2>
-        <p class="duration">3 sec</p>
+        <p class="duration">2 sec</p>
         <audio src="Audio/afraid-so.mp3"></audio>
       </article>
 
       <article class="sound-card">
         <h2>Hot Topic</h2>
-        <p class="duration">5 sec</p>
+        <p class="duration">4 sec</p>
         <audio src="Audio/hot-topic.mp3"></audio>
       </article>
 
       <article class="sound-card">
         <h2>Best Friends</h2>
-        <p class="duration">3 sec</p>
+        <p class="duration">2 sec</p>
         <audio src="Audio/best-friends.mp3"></audio>
       </article>
 
       <article class="sound-card">
         <h2>Goal</h2>
-        <p class="duration">2 sec</p>
+        <p class="duration">4.2 sec</p>
         <audio src="Audio/goal.mp3"></audio>
       </article>
 
@@ -124,7 +127,7 @@
 
       <article class="sound-card">
         <h2>Big Eared Boy</h2>
-        <p class="duration">3 sec</p>
+        <p class="duration">4 sec</p>
         <audio src="Audio/big-eared-boy.mp3"></audio>
       </article>
 
@@ -139,7 +142,6 @@
         <p class="duration">2 sec</p>
         <audio src="Audio/idiot.mp3"></audio>
       </article>
-
       </section>
     </section>
   </main>
