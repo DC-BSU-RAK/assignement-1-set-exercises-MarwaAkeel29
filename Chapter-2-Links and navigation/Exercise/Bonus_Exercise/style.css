@@ -65,7 +65,7 @@
 .background p {
     font-size: 1.5rem; /* Increases text size for readability */
     margin-bottom: 15px; /* Adds spacing below the paragraph */
-    font-family: 'Almendra', serif;
+    font-family: 'Almendra', serif; /* Added a font style */
 }
 
 /* 3. Button (For Official Website & Trailer) */
