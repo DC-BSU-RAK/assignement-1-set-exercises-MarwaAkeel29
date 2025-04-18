@@ -17,7 +17,8 @@
 .top-nav a {
     color: white; /* White color text */
     text-decoration: none; /* Removes default underline of link*/
-    font-size: 18px; /* readable font size */
+    font-size: 25px; /* readable font size */
+    font-family: 'Almendra', serif;
     font-weight: bold; /* slightly darker text */
     padding: 10px 15px; /* Adds spacing around links */
     margin: 0 10px; /* Adds spacing between links */
@@ -56,13 +57,15 @@
 }
 
 .background h1 {
-    font-size: 3rem; /* Large heading */
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 2.5rem; /* Large heading */
     text-shadow: 3px 3px 5px rgba(255, 165, 0, 0.6); /* Adds a fiery shadow */
 }
 
 .background p {
     font-size: 1.5rem; /* Increases text size for readability */
     margin-bottom: 15px; /* Adds spacing below the paragraph */
+    font-family: 'Almendra', serif;
 }
 
 /* 3. Button (For Official Website & Trailer) */
