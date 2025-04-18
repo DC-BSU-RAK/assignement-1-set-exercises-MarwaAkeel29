@@ -1,25 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alan Partridge Soundboard</title>
-  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<!DOCTYPE html> <!-- Declares the document as an HTML5 file -->
+<html lang="en"> <!-- Root element of the HTML document, with language set to English -->
+<head> <!-- Metadata and resources for the document -->
+  
+  <meta charset="UTF-8" /> <!-- Sets character encoding to UTF-8 for wide character support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Ensures responsive scaling on all screen sizes -->
+  <title>Alan Partridge Soundboard</title> <!-- Sets the page title in the browser tab -->
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron&display=swap" rel="stylesheet"> <!-- Imports custom Google Fonts: Monoton and Orbitron -->
+  <link rel="stylesheet" href="style.css"> <!-- Links to the external CSS stylesheet for styling -->
 </head>
-<body>
 
-  <!-- Page heading -->
+<body>
+  <!-- Visible content of the web page -->
+
   <header>
+    <!-- Top section containing the main heading -->
     <h1>Alan Partridge Soundboard</h1>
+    <!-- Displays the title of the soundboard -->
   </header>
 
-  <!-- Main content area -->
   <main>
-    <!-- Grid of audio buttons -->
-    <section class="soundboard">
+    <!-- Main content area of the page -->
 
-      <!-- Single sample button -->
+    <section class="soundboard">
+      <!-- A grid section that holds all the sound cards -->
+
+      <!-- Individual sound card containing a title and audio -->
       <article class="sound-card">
         <h2>Ah-Ha</h2>
         <audio src="Audio/ah-ha.mp3"></audio>
@@ -59,7 +64,7 @@
         <h2>Im Confused</h2>
         <audio src="Audio/imconfused.mp3"></audio>
       </article>
-      
+
       <article class="sound-card">
         <h2>Jurassic Park</h2>
         <audio src="Audio/jurassic-park.mp3"></audio>
@@ -67,8 +72,9 @@
     </section>
   </main>
 
-  <!-- JS file for audio interaction -->
   <script src="index.js"></script>
+  <!-- Loads external JavaScript to handle interactivity -->
 </body>
 </html>
+
 
