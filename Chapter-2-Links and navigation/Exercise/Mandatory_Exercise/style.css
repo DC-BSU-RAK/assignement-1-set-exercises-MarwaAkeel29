@@ -1,3 +1,7 @@
+body {
+    font-family: 'Almendra', serif; /* Added a font style */
+  }
+  
 .sidenav {
     height: 100%;
     width: 220px; /* Sidebar width */
@@ -13,7 +17,7 @@
 
 .sidenav a {
     display: block;
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
     color: white;
     padding: 12px 15px;
@@ -29,20 +33,34 @@
 .main-content {
     margin-left: 210px; /* Adjust to match sidebar width */
     padding: 20px;
+    background: linear-gradient(
+  to bottom,
+  #ffe0b2,
+  #ffc166,
+  #ebb66b,
+  #d5a761,
+  #4c4c6d,
+  #3e416d,
+  #2e2e48,
+  #1a1a2e
+);
 }
 
 h1 {
     font-size: 3rem;
+    font-family: 'Uncial Antiqua', cursive; /* Added a font style */
     text-align: center;
     color: #db8b13f9;
 }
 
 h2 {
+    font-family: 'Uncial Antiqua', cursive;
     font-size: 1.7rem;
     color: #db8b13f9;
 }
 
 h3 {
+    font-family: 'Uncial Antiqua', cursive;
     font-size: 1.2rem;
     color: #db8b13f9;
 }
