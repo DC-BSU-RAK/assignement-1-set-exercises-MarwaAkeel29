@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RGB Hacker Mode</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="hacker-frame">
+
+    <!-- Header / Terminal Title -->
+    <header class="terminal-header">
+      <h1>&gt; INITIATING RGB DECRYPTION PROTOCOL</h1>
+      <p class="subline">Access required: Visual Pattern Recognition</p>
+    </header>
+
+    <!-- Main Game Interface -->
+    <main class="game-panel">
+
+      <!-- RGB Code Display -->
+      <div class="rgb-display">
+        <p>TARGET RGB CODE:</p>
+        <span id="rgbCode">rgb(???, ???, ???)</span>
+      </div>
+
+      <!-- Color Option Grid -->
+      <section class="color-options">
+        <!-- Boxes injected via JS -->
+        <div class="color-box" data-choice="1"></div>
+        <div class="color-box" data-choice="2"></div>
+        <div class="color-box" data-choice="3"></div>
+      </section>
+
+      <!-- System Message Area -->
+      <div class="system-output">
+        <p id="messageOutput">Awaiting input...</p>
+        <p id="traceLevel">Trace Level: 0%</p>
+        <p id="score">Access Score: 00</p>
+      </div>
+
+      <!-- Game Over + Restart -->
+      <div id="gameOverScreen" class="hidden">
+        <p class="big-alert">⚠ SYSTEM BREACH DETECTED ⚠</p>
+        <button id="restartBtn">Restart Hack</button>
+      </div>
+
+    </main>
+
+    <!-- Footer / Terminal Logs -->
+    <footer class="terminal-footer">
+      <p>&gt;&gt; SYSTEM LOGGING ENABLED | RGB Hacker Mode | v1.0</p>
+    </footer>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
