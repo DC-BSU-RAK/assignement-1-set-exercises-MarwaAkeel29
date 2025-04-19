@@ -1,60 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Declares the HTML5 document type -->
+<html lang="en"> <!-- Root element with language set to English -->
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>RGB Hacker Mode</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" /> <!-- Character encoding set to UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Ensures responsive layout on mobile -->
+  <title>RGB Hacker Mode</title> <!-- Sets the page title in browser tab -->
+  <link rel="stylesheet" href="style.css" /> <!-- Links to external CSS file -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet"> <!-- Imports retro-style font -->
 </head>
-<body>
-  <div class="hacker-frame">
+<body> <!-- Main body of the webpage -->
+  <div class="hacker-frame"> <!-- Styled container for the entire interface -->
 
-    <!-- Header / Terminal Title -->
-    <header class="terminal-header">
-      <h1>&gt; INITIATING RGB DECRYPTION PROTOCOL</h1>
-      <p class="subline">Access required: Visual Pattern Recognition</p>
+    <header class="terminal-header"> <!-- Header with terminal-style title -->
+      <h1>&gt; INITIATING RGB DECRYPTION PROTOCOL</h1> <!-- Main heading text -->
+      <p class="subline">Access required: Visual Pattern Recognition</p> <!-- Subtitle under heading -->
     </header>
 
-    <!-- Main Game Interface -->
-    <main class="game-panel">
+    <main class="game-panel"> <!-- Main interactive game area -->
 
-      <!-- RGB Code Display -->
-      <div class="rgb-display">
-        <p>TARGET RGB CODE:</p>
-        <span id="rgbCode">rgb(???, ???, ???)</span>
+      <div class="rgb-display"> <!-- Section showing the target RGB code -->
+        <p>TARGET RGB CODE:</p> <!-- Label for the RGB code -->
+        <span id="rgbCode">rgb(???, ???, ???)</span> <!-- Placeholder for the actual RGB code -->
       </div>
 
-      <!-- Color Option Grid -->
-      <section class="color-options">
-        <!-- Boxes injected via JS -->
-        <div class="color-box" data-choice="1"></div>
-        <div class="color-box" data-choice="2"></div>
-        <div class="color-box" data-choice="3"></div>
+      <section class="color-options"> <!-- Area where color options appear -->
+        <div class="color-box" data-choice="1"></div> <!-- Color box option 1 -->
+        <div class="color-box" data-choice="2"></div> <!-- Color box option 2 -->
+        <div class="color-box" data-choice="3"></div> <!-- Color box option 3 -->
       </section>
 
-      <!-- System Message Area -->
-      <div class="system-output">
-        <p id="messageOutput">Awaiting input...</p>
-        <p id="traceLevel">Trace Level: 0%</p>
-        <p id="score">Access Score: 00</p>
+      <div class="system-output"> <!-- Displays system messages and stats -->
+        <p id="messageOutput">Awaiting input...</p> <!-- Dynamic message text -->
+        <p id="traceLevel">Trace Level: 0%</p> <!-- Displays current trace level -->
+        <p id="score">Access Score: 00</p> <!-- Displays current score -->
       </div>
 
-      <!-- Game Over + Restart -->
-      <div id="gameOverScreen" class="hidden">
-        <p class="big-alert">⚠ SYSTEM BREACH DETECTED ⚠</p>
-        <button id="restartBtn">Restart Hack</button>
+      <div id="gameOverScreen" class="hidden"> <!-- Hidden game over screen -->
+        <p class="big-alert">⚠ SYSTEM BREACH DETECTED ⚠</p> <!-- Alert message when game ends -->
+        <button id="restartBtn">Restart Hack</button> <!-- Button to restart the game -->
       </div>
 
     </main>
 
-    <!-- Footer / Terminal Logs -->
-    <footer class="terminal-footer">
-      <p>&gt;&gt; SYSTEM LOGGING ENABLED | RGB Hacker Mode | v1.0</p>
+    <footer class="terminal-footer"> <!-- Footer with system log message -->
+      <p>&gt;&gt; SYSTEM LOGGING ENABLED | RGB Hacker Mode | v1.0</p> <!-- Footer text -->
     </footer>
 
   </div>
-
-  <script src="index.js"></script>
+  <script src="index.js"></script> <!-- Links to the JavaScript file -->
 </body>
 </html>
+
