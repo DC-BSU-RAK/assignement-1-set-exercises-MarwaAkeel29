@@ -171,6 +171,7 @@ h2, h3 {
     background-color: #1a1a2e; /* Dark background for unified visual aesthetic */
     border-radius: 30px; /* Rounded edges give a soft, scrollable card view */
     margin-left: 20px; /* Slight shift to the right for spacing from edge */
+    margin-bottom: 20px;
     align-items: center; /* Vertically centers inner review cards */
     text-align: center; /* Text inside cards is centered */
     display: flex; /* Flex layout to line up cards horizontally */
@@ -227,3 +228,29 @@ h2, h3 {
         box-shadow: 0 0 10px rgba(255, 140, 0, 0.6); /* Subtle fire-glow */
     }
 }
+
+/* Footer Styling */
+.site-footer {
+    background-color: #1a1a2e; /* Matches the dark theme of the site */
+    color: white; /* Ensures readability */
+    text-align: center; /* Centers all footer content */
+    border-top: 5px solid #db8b13f9; /* Fiery orange top border for continuity */
+    font-family: 'Almendra', serif; /* Keeps the fantasy-style font */
+    margin-top: 40px; /* Adds space above the footer */
+}
+
+/* Footer Links */
+.site-footer a {
+    color: #db8b13f9; /* Dragon flame orange */
+    text-decoration: none; /* Removes underline for a cleaner look */
+    font-weight: bold; /* Makes links stand out */
+    margin: 0 8px; /* Adds space between links */
+    transition: 0.3s ease; /* Smooth hover effect */
+}
+
+.site-footer a:hover {
+    color: white; /* Changes to white on hover for contrast */
+    text-shadow: 0 0 5px #db8b13f9; /* Glowing dragon-fire effect on hover */
+}
+
+
