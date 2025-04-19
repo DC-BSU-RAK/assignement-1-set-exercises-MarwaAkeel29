@@ -1,0 +1,153 @@
+/* IMPORT RETRO HACKER FONT */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY BACKGROUND - DARK HACKER MODE */
+body {
+  font-family: 'Share Tech Mono', monospace;
+  background: linear-gradient(to bottom right, #2B0013, #22000f, #660F24);
+  color: #FFDBE8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* TERMINAL FRAME */
+.hacker-frame {
+  background: #1a0d11;
+  border: 3px solid #FF94B2;
+  box-shadow: 0 0 15px #FF94B2, 0 0 30px #F24455 inset;
+  padding: 2rem;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* HEADER */
+.terminal-header h1 {
+  font-size: 1.2rem;
+  color: #F24455;
+  text-shadow: 0 0 5px #F24455, 0 0 10px #E5203A;
+  animation: flicker 1.2s infinite alternate;
+  margin-bottom: 0.5rem;
+}
+
+.subline {
+  font-size: 0.8rem;
+  color: #FF94B2;
+  margin-bottom: 1.5rem;
+}
+
+/* RGB DISPLAY */
+.rgb-display p {
+  font-size: 0.9rem;
+  color: #FF94B2;
+  margin-bottom: 0.3rem;
+}
+
+#rgbCode {
+  display: inline-block;
+  font-size: 1rem;
+  color: #FFDBE8;
+  background: #E5203A;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px #F24455;
+  margin-bottom: 1.5rem;
+}
+
+/* COLOR OPTIONS */
+.color-options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.color-box {
+  height: 80px;
+  border: 2px solid #FF94B2;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #FF94B2;
+}
+
+/* SYSTEM OUTPUT */
+.system-output p {
+  font-size: 0.75rem;
+  margin: 0.3rem 0;
+  color: #FFDBE8;
+}
+
+/* GAME OVER SCREEN */
+#gameOverScreen {
+  background: rgba(42, 0, 19, 0.9);
+  border: 2px dashed #FF94B2;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.big-alert {
+  color: #F24455;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  animation: glitch 0.6s infinite;
+}
+
+#restartBtn {
+  background: linear-gradient(90deg, #FF94B2, #E5203A);
+  border: none;
+  color: #1a0d11;
+  padding: 0.6rem 1.2rem;
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+  box-shadow: 0 0 10px #FF94B2;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+#restartBtn:hover {
+  background: linear-gradient(90deg, #E5203A, #FF94B2);
+  box-shadow: 0 0 15px #F24455;
+}
+
+/* FOOTER */
+.terminal-footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: #660F24;
+  text-align: center;
+}
+
+/* HIDDEN UTILITY */
+.hidden {
+  display: none;
+}
+
+/* FLICKER ANIMATION */
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+/* GLITCH ANIMATION */
+@keyframes glitch {
+  0% { text-shadow: 2px 0 #F24455, -2px 0 #FF94B2; }
+  50% { text-shadow: -2px 0 #F24455, 2px 0 #FF94B2; }
+  100% { text-shadow: none; }
+}
