@@ -1,14 +1,12 @@
 /* Global Styles */
 body {
     font-family: 'Lora', serif;
-    margin: 50px; /*space around the body */
+    margin: 90px; /*space around the body */
     padding: 20px; /* space inside the body */
     line-height: 1.7; /* Controls spacing between lines */
     background-image: url("https://i.pinimg.com/236x/51/ff/82/51ff8270b6412e693391a66dd1ac97fe.jpg"); /* Sets brownish background image */
     background-repeat: no-repeat; /* Prevents image from repeating */
     background-size: cover; /* image covers the entire background */
-    transform: scale(0.85); /* Shrinks entire site to 85% */
-    transform-origin: top center; /* Keeps content centered at top */
 }
 
 /* Header Section */  
@@ -52,7 +50,7 @@ h2 {
     background-color: #f8e8d7; /* Adds background color */
     border: 5px solid #9C6644; /* Adds a border */
     border-radius: 70px; /* Rounds the corners */
-    margin: 40px auto; /* Adds space around and centers it */
+    margin: 80px auto; /* Adds space around and centers it */
     box-shadow: 15px 10px 10px rgba(0, 0, 0, 0.1); /* Adds shadow */
     padding: 40px; /* Adds space inside */
     max-width: 90%; /* Limits maximum width */
