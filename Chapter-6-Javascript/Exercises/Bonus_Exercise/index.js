@@ -75,15 +75,24 @@ colorBoxes.forEach((box) => {
 
     if (isCorrect) {
       messageOutput.textContent = "✔ Access Granted!";
+      messageOutput.style.color = "#00FF99"; // Bright green for success
+      messageOutput.style.textShadow = "0 0 8px #00FF99"; // Glowing effect
       score += 10;
       updateStats();
-      loadNewRound(); // Next round
+
+      // Delay next round slightly to let player see success
+      setTimeout(() => {
+        messageOutput.style.color = "#FFDBE8"; // Reset to default
+        messageOutput.style.textShadow = "none";
+        loadNewRound();
+      }, 800); // 0.9 seconds delay
     } else {
       messageOutput.textContent = "✖ Intrusion Detected!";
+      messageOutput.style.color = "#F24455"; // Red for danger
       trace += 25;
       updateStats();
-      box.style.opacity = "0.2"; // Dim the wrong one
-      box.style.pointerEvents = "none"; // Prevent repeat click
+      box.style.opacity = "0.2";
+      box.style.pointerEvents = "none";
 
       if (trace >= maxTrace) {
         endGame();
@@ -91,6 +100,7 @@ colorBoxes.forEach((box) => {
     }
   });
 });
+
 
 // Show game over screen
 function endGame() {
