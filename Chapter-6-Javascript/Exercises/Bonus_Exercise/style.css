@@ -11,7 +11,8 @@
 /* BODY BACKGROUND - DARK HACKER MODE */
 body {
   font-family: 'Share Tech Mono', monospace; /* Applies retro hacker font */
-  background: linear-gradient(to bottom right, #2B0013, #22000f, #660F24); /* Gradient background from dark red to deep pink */
+  background-image: url(https://png.pngtree.com/background/20240412/original/pngtree-red-abstract-binary-code-technology-a-3d-rendered-illustration-of-digital-picture-image_8461897.jpg); /* Hacker inspired background image */
+  background-size: cover; /* Ensures image covers entire area */
   color: #FFDBE8; /* Light pink text color for contrast */
   min-height: 100vh; /* Full viewport height */
   display: flex; /* Enables flexbox layout */
@@ -23,7 +24,7 @@ body {
 /* TERMINAL FRAME */
 .hacker-frame {
   background: #1a0d11; /* Deep black-red terminal background */
-  border: 3px solid #FF94B2; /* Bright pink border to simulate terminal shell */
+  border: 3px solid #ec0e20; /* Bright pink border to simulate terminal shell */
   box-shadow: 0 0 15px #FF94B2, /* Outer glow effect */
               0 0 30px #F24455 inset; /* Inner glow for neon look */
   padding: 2rem;  /* Space inside the container */
@@ -43,14 +44,14 @@ body {
 }
 
 .subline {
-  font-size: 0.8rem;  /* Smaller subtitle text */
+  font-size: 0.9rem;  /* Smaller subtitle text */
   color: #FF94B2;  /* Light pink color */
   margin-bottom: 1.5rem;  /* Space below the subline */
 }
 
 /* RGB DISPLAY */
 .rgb-display p {
-  font-size: 0.9rem; /* Slightly smaller label */
+  font-size: 1rem; /* Slightly smaller label */
   color: #FF94B2; /* Light pink text */
   margin-bottom: 0.3rem; /* Spacing between label and value */
 }
@@ -68,18 +69,19 @@ body {
 
 /* COLOR OPTIONS */
 .color-options {
-  display: grid;  /* Use grid layout */
-  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
-  gap: 1rem;   /* Space between boxes */
-  margin-bottom: 1.5rem;  /* Space below the color options */
+  display: flex;            /* Use flexbox instead */
+  justify-content: center;  /* Centers content horizontally */
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .color-box {
-  height: 80px; /* Box height */
-  border: 2px solid #FF94B2;  /* Bright pink border for each box */
-  border-radius: 2px;  /* Slight rounding */
-  cursor: pointer; /* Pointer on hover */
-  transition: transform 0.2s, box-shadow 0.2s; /* Smooth effects */
+  width: 100px;              /* Set width equal to height */
+  height: 90px;             /* Keep the original height */
+  border: 2px solid #FF94B2; /* border effect */
+  border-radius: 50%;       /* Makes it a perfect circle */
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .color-box:hover {
@@ -89,7 +91,7 @@ body {
 
 /* SYSTEM OUTPUT */
 .system-output p {
-  font-size: 0.75rem; /* Small font for stats/messages */
+  font-size: 0.9rem; /* Small font for stats/messages */
   margin: 0.3rem 0;  /* Vertical spacing between lines */
   color: #FFDBE8; /* Light pink text color */
 }
@@ -132,7 +134,8 @@ body {
 .terminal-footer {
   margin-top: 3rem;  /* Space above footer */
   font-size: 0.9rem; /* Slightly smaller text */
-  color: #660F24; /* Dimmed red for less focus */
+  color: #75192e; /* Dimmed red for less focus */
+  font-weight: bolder;
   text-align: center;  /* Centered footer text */
 }
 
