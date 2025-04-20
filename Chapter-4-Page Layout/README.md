@@ -36,7 +36,7 @@ Features:
   - Fixed sidebar on the left with title: **Study Planner**
   - Navigation items: Dashboard, Calendar, Subjects, Settings
 - Main content area:
-  - `h2` header: **Today’s Tasks**
+  - `h2` header: **Daily Focus**
   - List of tasks styled as neon-glow blocks:
 - Visual styling includes:
   - Grid layout for container organization
@@ -45,6 +45,13 @@ Features:
   - Animated hover transitions on navigation links and tasks
   - Custom color palette: black background, green glow, soft gray for balance
 - All styles included in a separate file: `style.css`
+
+  ---
+
+### 🗂️ Wireframe Included
+
+A wireframe sketch for the layout was created to plan the structure of the page before implementation.  
+It can be found in the `wireframe/` folder inside the project directory.
 
 ---
 ### 🧠 Skills Demonstrated
