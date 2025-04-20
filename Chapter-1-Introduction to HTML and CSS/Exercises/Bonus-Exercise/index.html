@@ -60,12 +60,12 @@
                 <p>The heading tags define headings on a webpage with &lt;h1&gt; being the most important and &lt;h6&gt; the least. They help structure content, improve readability. As you can see below, the size will reduce accordingly</p>
                 <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
                     <code class="code-headings">
-&lt;h1&gt;Main Heading&lt;/h1&gt;
-&lt;h2&gt;Subheading&lt;/h2&gt;
-&lt;h3&gt;Section Title&lt;/h3&gt;
-&lt;h4&gt;Subsection Title&lt;/h4&gt;
-&lt;h5&gt;Smaller Heading&lt;/h5&gt;
-&lt;h6&gt;Least Important Heading&lt;/h6&gt;
+                        <span>&lt;h1&gt;Main Heading&lt;/h1&gt;</span>
+                        <span>&lt;h2&gt;Subheading&lt;/h2&gt;</span>
+                        <span>&lt;h3&gt;Section Title&lt;/h3&gt;</span>
+                        <span>&lt;h4&gt;Subsection Title&lt;/h4&gt;</span>
+                        <span>&lt;h5&gt;Smaller Heading&lt;/h5&gt;</span>
+                        <span>&lt;h6&gt;Least Important Heading&lt;/h6&gt;</span>
                     </code>
                 </pre>
             </article>
@@ -84,19 +84,19 @@
                 <h4>(c) Text Styling Tags</h4> <!-- Subheading -->
                 <p>These tags help to emphasize or modify text appearance.</p> <!-- Paragrapgh of text-->
                 <ul class="text-style">
-                    <li>&lt;b&gt; - Bold text</li>
-                    <li>&lt;strong&gt; - Important text</li>
-                    <li>&lt;i&gt; - Italics</li>
-                    <li>&lt;u&gt; - Underlined</li>
-                    <li>&lt;mark&gt; - Highlighted text</li>
+                    <li>&lt;b&gt; -  It makes text bold for emphasis but doesn't add importance.</li>
+                    <li>&lt;strong&gt; - Highlights important text with extra meaning (used by screen readers).</li>
+                    <li>&lt;i&gt; - Italicizes text for emphasis, thoughts, or foreign words.</li>
+                    <li>&lt;u&gt; - Draws attention to text, often used for misspellings or special emphasis.</li>
+                    <li>&lt;mark&gt; - Highlights text in bright yellow (by default) to make it stand out.</li>
                 </ul>
                 <pre> <!-- <pre> preserves formatting and whitespace, <code> shows the content as code -->
                     <code>
-&lt;b&gt;Bold&lt;/b&gt;
-&lt;strong&gt;Important&lt;/strong&gt;
-&lt;i&gt;Italic&lt;/i&gt;
-&lt;u&gt;Underlined&lt;/u&gt;
-&lt;mark&gt;Highlighted&lt;/mark&gt;
+                        &lt;b&gt; <b>This is a bold Text</b> &lt;/b&gt;  
+                        &lt;strong&gt; <strong> This is an Important Text </strong> &lt;/strong&gt; 
+                        &lt;i&gt; <i>This Text is in Italics </i> &lt;/i&gt;   
+                        &lt;u&gt; <u>This Text is Underlined </u> &lt;/u&gt; 
+                        &lt;mark&gt; <mark>This Text is Highlighted </mark> &lt;/mark&gt;
                     </code>
                 </pre>
             </article>
@@ -161,7 +161,7 @@ src="https://www.youtube.com/embed/dQw4w9WgXcQ"
 &lt;ul&gt;  &lt;!-- Unordered List --&gt;
     &lt;li&gt;Bali - Tropical beaches and stunning sunsets&lt;/li&gt;
     &lt;li&gt;Swiss Alps&lt;/li&gt;
-     &lt;li&gt;New York City&lt;/li&gt;
+    &lt;li&gt;New York City&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;ol&gt;  &lt;!-- Ordered List --&gt;
@@ -286,6 +286,11 @@ justify-content: center; /* Centers items horizontally */
 }
                     </code>
                 </pre>
+                
+                <p>
+                    Remember the Name field you tried earlier? This is the same input field, but now it includes transition and transform CSS properties.
+                </p>
+
                 <form class="form1"> <!-- Simple form collecting user's name with a submit button -->
                     <label for="name"> Name:</label>
                     <input type="text" id="name" name="name"><br>
