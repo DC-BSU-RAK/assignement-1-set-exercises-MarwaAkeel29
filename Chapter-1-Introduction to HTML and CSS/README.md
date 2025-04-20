@@ -31,7 +31,7 @@ The goal of this task was to construct a simple yet functional web page featurin
 
 - A centered CSS container box to neatly frame the page content.  
 - Carefully selected **Google Fonts** to complement the culinary theme.  
-- A stylized anchor link for added navigation charm.  
+- A stylized print button for printing recipe.  
 - Subtle **hover effects** to add interactivity to the image element.
 
 > 💡 *This project offered a solid foundation in web structuring and basic aesthetic control using CSS.*
